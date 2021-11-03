@@ -5,18 +5,30 @@ import { MaxUint256 } from '@ethersproject/constants';
 
 import ERC20Abi from '../abi/ERC20.json';
 
-export async function tokensApprove(tokens: string[], addressToApprove: string, amountToApprove: string = MaxUint256.toString(), provider=getProvider(), wallet=getWallet(provider)) {
-    
-    for(const token of tokens) {
+export async function tokensApprove(
+    tokens: string[],
+    addressToApprove: string,
+    amountToApprove: string = MaxUint256.toString(),
+    provider = getProvider(),
+    wallet = getWallet(provider)
+) {
+    for (const token of tokens) {
         const tokenContract = new Contract(token, ERC20Abi, provider);
-        const allowance = await tokenContract.allowance(wallet.address, addressToApprove);
-        if(allowance.lt(amountToApprove)){
+        const allowance = await tokenContract.allowance(
+            wallet.address,
+            addressToApprove
+        );
+        if (allowance.lt(amountToApprove)) {
             console.log(`Approving: ${token} ${addressToApprove}...`);
-            const tx = await tokenContract.connect(wallet).approve(addressToApprove, MaxUint256);
+            const tx = await tokenContract
+                .connect(wallet)
+                .approve(addressToApprove, MaxUint256);
             await tx.wait();
             console.log(`Approved: ${tx.hash}`);
         } else {
-            console.log(`Already has allowance: ${token} ${addressToApprove} ${allowance.toString()}`);
+            console.log(
+                `Already has allowance: ${token} ${addressToApprove} ${allowance.toString()}`
+            );
         }
     }
 }

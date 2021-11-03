@@ -13,7 +13,13 @@ async function queryAmpFactor(poolAddress: string, provider = getProvider()) {
     console.log(ampFactor.toString());
 }
 
-async function updateAmpFactor(poolAddress: string, rawEndValue: string, endTime: string, provider = getProvider(), wallet = getWallet(provider)) {
+async function updateAmpFactor(
+    poolAddress: string,
+    rawEndValue: string,
+    endTime: string,
+    provider = getProvider(),
+    wallet = getWallet(provider)
+) {
     console.log(wallet.address);
     const poolContract = new Contract(poolAddress, stablePoolAbi, provider);
     /*
@@ -22,11 +28,11 @@ async function updateAmpFactor(poolAddress: string, rawEndValue: string, endTime
     Daily Rate must be < 2
     DailyRate = (86400*CurrentValue)/(EndValue*(endTime-BlockTime))
     */
-    const tx = await poolContract.connect(wallet).startAmplificationParameterUpdate(rawEndValue, endTime,
-        {
+    const tx = await poolContract
+        .connect(wallet)
+        .startAmplificationParameterUpdate(rawEndValue, endTime, {
             gasPrice: '20000000000',
-            gasLimit: '5000000'
-
+            gasLimit: '5000000',
         });
     console.log(tx);
     await tx.wait();

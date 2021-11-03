@@ -17,4 +17,4 @@ export type WeightedPoolInfo = {
     weights: string[];
     swapFeePercentage: string;
     owner: string;
-}
+};

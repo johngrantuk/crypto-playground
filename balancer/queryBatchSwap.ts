@@ -1,15 +1,15 @@
 /**
-     * queryBatchSwap simulates a call to `batchSwap`, returning an array of Vault asset deltas. Calls to `swap` cannot be
-     * simulated directly, but an equivalent `batchSwap` call can and will yield the exact same result.
-     *
-     * Each element in the array corresponds to the asset at the same index, and indicates the number of tokens (or ETH)
-     * the Vault would take from the sender (if positive) or send to the recipient (if negative). The arguments it
-     * receives are the same that an equivalent `batchSwap` call would receive.
-     *
-     * Unlike `batchSwap`, this function performs no checks on the sender or recipient field in the `funds` struct.
-     * This makes it suitable to be called by off-chain applications via eth_call without needing to hold tokens,
-     * approve them for the Vault, or even know a user's address.
-**/
+ * queryBatchSwap simulates a call to `batchSwap`, returning an array of Vault asset deltas. Calls to `swap` cannot be
+ * simulated directly, but an equivalent `batchSwap` call can and will yield the exact same result.
+ *
+ * Each element in the array corresponds to the asset at the same index, and indicates the number of tokens (or ETH)
+ * the Vault would take from the sender (if positive) or send to the recipient (if negative). The arguments it
+ * receives are the same that an equivalent `batchSwap` call would receive.
+ *
+ * Unlike `batchSwap`, this function performs no checks on the sender or recipient field in the `funds` struct.
+ * This makes it suitable to be called by off-chain applications via eth_call without needing to hold tokens,
+ * approve them for the Vault, or even know a user's address.
+ **/
 require('dotenv').config();
 import { Contract } from '@ethersproject/contracts';
 import { JsonRpcProvider } from '@ethersproject/providers';
@@ -23,7 +23,7 @@ import { getRate } from './wrappedTokenRateProvider';
 import vaultAbi from '../abi/Vault.json';
 
 const SWAPS = {
-    'SINGLE': {
+    SINGLE: {
         swapType: SwapTypes.SwapExactIn,
         swaps: [
             {
@@ -47,21 +47,21 @@ const SWAPS = {
                 assetInIndex: 2,
                 assetOutIndex: 3,
                 amount: '123456',
-                userData: '0x'
+                userData: '0x',
             },
             {
                 poolId: '0x21ff756ca0cfcc5fff488ad67babadffee0c4149000000000000000000000240',
                 assetInIndex: 1,
                 assetOutIndex: 2,
                 amount: '0',
-                userData: '0x'
+                userData: '0x',
             },
             {
                 poolId: '0xcd32a460b6fecd053582e43b07ed6e2c04e1536900000000000000000000023c',
                 assetInIndex: 0,
                 assetOutIndex: 1,
                 amount: '0',
-                userData: '0x'
+                userData: '0x',
             },
         ],
         assets: [
@@ -79,20 +79,20 @@ const SWAPS = {
                 assetInIndex: 0,
                 assetOutIndex: 1,
                 amount: '1000000000000000000',
-                userData: '0x'
+                userData: '0x',
             },
             {
                 poolId: '0x21ff756ca0cfcc5fff488ad67babadffee0c4149000000000000000000000240',
                 assetInIndex: 1,
                 assetOutIndex: 2,
                 amount: '0',
-                userData: '0x'
-            }
+                userData: '0x',
+            },
         ],
         assets: [
             '0xff795577d9ac8bd7d90ee22b6c1703490b6512fd',
             '0xcd32a460b6fecd053582e43b07ed6e2c04e15369',
-            '0x21ff756ca0cfcc5fff488ad67babadffee0c4149'
+            '0x21ff756ca0cfcc5fff488ad67babadffee0c4149',
         ],
     },
     'aUSDT-staBAL3': {
@@ -103,25 +103,25 @@ const SWAPS = {
                 assetInIndex: 0,
                 assetOutIndex: 1,
                 amount: '1000000',
-                userData: '0x'
+                userData: '0x',
             },
             {
                 poolId: '0x21ff756ca0cfcc5fff488ad67babadffee0c4149000000000000000000000240',
                 assetInIndex: 1,
                 assetOutIndex: 2,
                 amount: '0',
-                userData: '0x'
-            }
+                userData: '0x',
+            },
         ],
         assets: [
             '0xe8191aacfcdb32260cda25830dc6c9342142f310',
             '0x6a8c3239695613c0710dc971310b36f9b81e115e',
-            '0x21ff756ca0cfcc5fff488ad67babadffee0c4149'
+            '0x21ff756ca0cfcc5fff488ad67babadffee0c4149',
         ],
-    }
-}
+    },
+};
 
-async function queryBatchSwap(){
+async function queryBatchSwap() {
     const networkId = Network.KOVAN;
     const provider = new JsonRpcProvider(PROVIDER_URLS[networkId]);
     const vaultContract = new Contract(balancerVault, vaultAbi, provider);
@@ -150,4 +150,3 @@ async function queryBatchSwap(){
 
 // ts-node ./balancer/queryBatchSwap.ts
 queryBatchSwap();
-

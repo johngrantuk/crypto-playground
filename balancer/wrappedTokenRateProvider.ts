@@ -4,13 +4,12 @@ import { JsonRpcProvider } from '@ethersproject/providers';
 
 import { PROVIDER_URLS, Network } from '../constants/network';
 
-
 export async function getRate(rateProviderAddress: string): Promise<string> {
     const networkId = Network.KOVAN;
     const provider = new JsonRpcProvider(PROVIDER_URLS[networkId]);
     const rateProviderContract = new Contract(
-        rateProviderAddress, 
-        ['function getRate() external view returns (uint256)'], 
+        rateProviderAddress,
+        ['function getRate() external view returns (uint256)'],
         provider
     );
 
