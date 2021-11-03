@@ -9,3 +9,12 @@ export enum SwapTypes {
     SwapExactIn,
     SwapExactOut,
 }
+
+export type WeightedPoolInfo = {
+    name: string;
+    symbol: string;
+    tokens: string[];
+    weights: string[];
+    swapFeePercentage: string;
+    owner: string;
+}

@@ -16,3 +16,8 @@ wrappedTokenRateProvider - gets rate for StaticATokenRateProvider
 
 stablePool - operations on Balancer Stable Pool.
 - Get/Set Amp Factor
+
+weightedPool - operations on Balancer Weighted Pool.
+- Deploy new pool
+
+subgraphQueries - Useful Subgraph Info and Querie examples

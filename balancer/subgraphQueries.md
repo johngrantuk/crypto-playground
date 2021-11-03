@@ -3,10 +3,15 @@
 ### Useful Info
 
 https://api.thegraph.com/subgraphs/name/balancer-labs/balancer
+
 https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2
+
 https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-kovan-v2
+
 https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-polygon-v2
+
 https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-arbitrum-v2
+
 Timurs: https://api.thegraph.com/subgraphs/name/destiner/balancer-kovan-v2
 
 ### Useful Queries
@@ -24,5 +29,24 @@ Pools with a specific token.
       address
       priceRate
     }
+  }
+```
+
+```
+Pool of type.
+
+  pools(where: {poolType: "Weighted"}) {
+    id
+    swapFee
+    owner
+    address
+    tokens {
+      symbol
+      balance
+      address
+      priceRate
+    }
+    tokensList
+    factory
   }
 ```
