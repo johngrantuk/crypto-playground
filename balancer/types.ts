@@ -1,3 +1,5 @@
+import { BigNumberish } from '@ethersproject/bignumber';
+
 export type FundManagement = {
     sender: string;
     recipient: string;
@@ -18,3 +20,11 @@ export type WeightedPoolInfo = {
     swapFeePercentage: string;
     owner: string;
 };
+
+export interface Swap {
+    poolId: string;
+    assetInIndex: number;
+    assetOutIndex: number;
+    amount: BigNumberish;
+    userData: string;
+}

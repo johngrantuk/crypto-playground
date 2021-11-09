@@ -18,6 +18,7 @@
     "@ethersproject/providers": "^5.5.0",
     "@ethersproject/wallet": "^5.5.0",
     "dotenv": "^10.0.0",
+    "sor-linear": "github:balancer-labs/balancer-sor#john/linear-package",
     "typescript": "^4.4.4"
   }
 }

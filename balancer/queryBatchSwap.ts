@@ -17,7 +17,7 @@ import { AddressZero } from '@ethersproject/constants';
 
 import { PROVIDER_URLS, Network } from '../constants/network';
 import { balancerVault } from '../constants/addresses';
-import { FundManagement, SwapTypes } from './types';
+import { FundManagement, SwapTypes, Swap } from './types';
 import { getRate } from './wrappedTokenRateProvider';
 
 import vaultAbi from '../abi/Vault.json';
@@ -121,11 +121,24 @@ const SWAPS = {
     },
 };
 
-async function queryBatchSwap() {
-    const networkId = Network.KOVAN;
-    const provider = new JsonRpcProvider(PROVIDER_URLS[networkId]);
-    const vaultContract = new Contract(balancerVault, vaultAbi, provider);
-
+/*
+ * queryBatchSwap simulates a call to `batchSwap`, returning an array of Vault asset deltas. Calls to `swap` cannot be
+ * simulated directly, but an equivalent `batchSwap` call can and will yield the exact same result.
+ *
+ * Each element in the array corresponds to the asset at the same index, and indicates the number of tokens (or ETH)
+ * the Vault would take from the sender (if positive) or send to the recipient (if negative). The arguments it
+ * receives are the same that an equivalent `batchSwap` call would receive.
+ *
+ * Unlike `batchSwap`, this function performs no checks on the sender or recipient field in the `funds` struct.
+ * This makes it suitable to be called by off-chain applications via eth_call without needing to hold tokens,
+ * approve them for the Vault, or even know a user's address.
+ */
+export async function queryBatchSwap(
+    vaultContract: Contract,
+    swapType: SwapTypes,
+    swaps: Swap[],
+    assets: string[]
+): Promise<string[]> {
     const funds: FundManagement = {
         sender: AddressZero,
         recipient: AddressZero,
@@ -133,14 +146,22 @@ async function queryBatchSwap() {
         toInternalBalance: false,
     };
 
+    return await vaultContract.queryBatchSwap(swapType, swaps, assets, funds);
+}
+
+async function fullQuery() {
+    const networkId = Network.KOVAN;
+    const provider = new JsonRpcProvider(PROVIDER_URLS[networkId]);
+    const vaultContract = new Contract(balancerVault, vaultAbi, provider);
+
     // await getRate('0x26575A44755E0aaa969FDda1E4291Df22C5624Ea'); // Rate for Kovan waDAI
     // await getRate('0x26743984e3357efc59f2fd6c1afdc310335a61c9'); // Rate for Kovan waUSDC
     await getRate('0xbfd9769b061e57e478690299011a028194d66e3c'); // Rate for Kovan waUSDT
-    const deltas = await vaultContract.queryBatchSwap(
+    const deltas = await queryBatchSwap(
+        vaultContract,
         SWAPS['aUSDT-staBAL3'].swapType,
-        SWAPS['aUSDT-staBAL3'].swaps, // swaps,
-        SWAPS['aUSDT-staBAL3'].assets, // assets,
-        funds
+        SWAPS['aUSDT-staBAL3'].swaps,
+        SWAPS['aUSDT-staBAL3'].assets
     );
 
     console.log(deltas.toString());
@@ -149,4 +170,4 @@ async function queryBatchSwap() {
 }
 
 // ts-node ./balancer/queryBatchSwap.ts
-queryBatchSwap();
+// fullQuery();

@@ -12,6 +12,8 @@ Vault.json - Balancer V2 Vault
 
 queryBatchSwap - simulates a call to `batchSwap`.
 
+queryBatchSwapHelpers - Helper function for more complicated queryBatchSwaps. i.e. multiple tokens in > single tokenOut.
+
 wrappedTokenRateProvider - gets rate for StaticATokenRateProvider
 
 stablePool - operations on Balancer Stable Pool.
