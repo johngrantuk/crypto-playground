@@ -17,8 +17,7 @@ export const PROVIDER_URLS = {
     [Network.ARBITRUM]: `https://arb1.arbitrum.io/rpc`,
 };
 
-export function getProvider(): JsonRpcProvider {
-    const networkId = Network.KOVAN;
+export function getProvider(networkId: number): JsonRpcProvider {
     return new JsonRpcProvider(PROVIDER_URLS[networkId]);
 }
 

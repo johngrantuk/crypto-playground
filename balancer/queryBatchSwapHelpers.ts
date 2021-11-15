@@ -1,6 +1,7 @@
 /*
 Phantom pools allow for join/exit of pool using swaps.
 One possible way to find BPT out for tokens in is to queryBatchSwap for each token swap.
+This file implements helper function to run queryBatchSwaps.
 */
 require('dotenv').config();
 import { JsonRpcProvider } from '@ethersproject/providers';
@@ -83,7 +84,7 @@ function batchSwaps(
 Uses SOR to create and query a batchSwap for multiple tokens in > single tokenOut.
 For example can be used to join staBal3 with DAI/USDC/USDT.
 */
-async function queryBatchSwapTokensIn(
+export async function queryBatchSwapTokensIn(
     sor: SOR,
     vaultContract: Contract,
     tokensIn: string[],
@@ -122,46 +123,6 @@ async function queryBatchSwapTokensIn(
         amountTokenOut,
         swaps: batchedSwaps.swaps,
         assets: batchedSwaps.assets,
-    };
-}
-
-/*
-queryBatchSwap for multiple tokens in > single tokenOut.
-Uses existing swaps/assets information and updates swap amounts.
-*/
-async function queryBatchSwapTokensInUpdateAmounts(
-    vaultContract: Contract,
-    swaps: Swap[],
-    assets: string[],
-    tokens: string[],
-    newAmounts: BigNumberish[],
-    tokenOut: string
-): Promise<{ amountTokenOut: string; swaps: Swap[]; assets: string[] }> {
-    for (let i = 0; i < tokens.length; i++) {
-        const tokenIndex = assets.indexOf(tokens[i]);
-        swaps.forEach((poolSwap) => {
-            if (
-                poolSwap.assetInIndex === tokenIndex ||
-                poolSwap.assetOutIndex === tokenIndex
-            )
-                poolSwap.amount = newAmounts[i];
-        });
-    }
-
-    // Onchain query
-    const deltas = await queryBatchSwap(
-        vaultContract,
-        SwapTypes.SwapExactIn,
-        swaps,
-        assets
-    );
-
-    const amountTokenOut = deltas[assets.indexOf(tokenOut)];
-
-    return {
-        amountTokenOut,
-        swaps,
-        assets,
     };
 }
 
@@ -216,50 +177,6 @@ async function queryBatchSwapTokensOut(
     };
 }
 
-/*
-queryBatchSwap for a single token in > multiple tokens out.
-Uses existing swaps/assets information and updates swap amounts.
-*/
-async function queryBatchSwapTokensOutUpdateAmounts(
-    vaultContract: Contract,
-    swaps: Swap[],
-    assets: string[],
-    newAmounts: BigNumberish[],
-    tokensOut: string[]
-): Promise<{ amountTokensOut: string[]; swaps: Swap[]; assets: string[] }> {
-    for (let i = 0; i < tokensOut.length; i++) {
-        const tokenIndex = assets.indexOf(tokensOut[i]);
-        swaps.forEach((poolSwap) => {
-            if (
-                poolSwap.assetInIndex === tokenIndex ||
-                poolSwap.assetOutIndex === tokenIndex
-            )
-                poolSwap.amount = newAmounts[i];
-        });
-    }
-
-    // Onchain query
-    const deltas = await queryBatchSwap(
-        vaultContract,
-        SwapTypes.SwapExactIn,
-        swaps,
-        assets
-    );
-
-    const amountTokensOut = [];
-    tokensOut.forEach((t) => {
-        const amount = deltas[assets.indexOf(t)];
-        if (amount) amountTokensOut.push(amount);
-        else amountTokensOut.push('0');
-    });
-
-    return {
-        amountTokensOut,
-        swaps: swaps,
-        assets: assets,
-    };
-}
-
 // Example running a join of staBal3 pool with underlying stable tokens
 async function example() {
     const [sor, vaultContract] = await setUp();
@@ -279,20 +196,6 @@ async function example() {
     console.log(queryResult.amountTokenOut.toString());
 
     /*
-    To avoid unnecessary subgraph call we can reuse swap information from above (as paths are same) and only update amounts.
-    */
-    const updatedQueryResult = await queryBatchSwapTokensInUpdateAmounts(
-        vaultContract,
-        queryResult.swaps,
-        queryResult.assets,
-        [AAVE_DAI.address, AAVE_USDC.address, AAVE_USDT.address],
-        [parseFixed('0.5', 18), parseFixed('0.5', 6), parseFixed('0.5', 6)],
-        STABAL3PHANTOM.address
-    );
-
-    console.log(updatedQueryResult.amountTokenOut.toString());
-
-    /*
     CASE - staBal3Bpt >  DAI, USDC, USDT
     Here we are splitting 0.3BPT In equally between each of DAI/USDC/USDT, i.e. 0.1 each.
     This has potential to be a costly call as it needs to query subgraph and onchain.
@@ -306,24 +209,6 @@ async function example() {
     );
 
     console.log(queryTokensOutResult.amountTokensOut.toString());
-
-    /*
-    To avoid unnecessary subgraph call we can reuse swap information from above (as paths are same) and only update amounts.
-    */
-    const updatedQueryTokensOutResult =
-        await queryBatchSwapTokensOutUpdateAmounts(
-            vaultContract,
-            queryTokensOutResult.swaps,
-            queryTokensOutResult.assets,
-            [
-                parseFixed('0.05', 18),
-                parseFixed('0.05', 18),
-                parseFixed('0.05', 18),
-            ],
-            [AAVE_DAI.address, AAVE_USDC.address, AAVE_USDT.address]
-        );
-
-    console.log(updatedQueryTokensOutResult.amountTokensOut.toString());
 }
 
 // ts-node ./balancer/queryBatchSwapHelpers.ts

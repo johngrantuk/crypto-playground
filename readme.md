@@ -4,22 +4,38 @@ Collection of snippets I've used that might be useful again.
 
 Various ABIs.
 
-Vault.json - Balancer V2 Vault
+* Vault.json - Balancer V2 Vault
 
 ### balancer
 
 [Balancer Labs](https://github.com/orgs/balancer-labs/dashboard)
 
-queryBatchSwap - simulates a call to `batchSwap`.
+* queryBatchSwap - simulates a call to `batchSwap`.
 
-queryBatchSwapHelpers - Helper function for more complicated queryBatchSwaps. i.e. multiple tokens in > single tokenOut.
+* queryBatchSwapHelpers.ts - Helper function for more complicated queryBatchSwaps. i.e. multiple tokens in > single tokenOut.
 
-wrappedTokenRateProvider - gets rate for StaticATokenRateProvider
+* queryBatchSwapSor.ts - This uses the SOR helper queryBatchSwapTokensIn to find amount of BPT for tokens in.
 
-stablePool - operations on Balancer Stable Pool.
-- Get/Set Amp Factor
+* queryBatchSwapTs.ts - WIP. Simulates a batchSwap in TS, a series of swaps with one or multiple Pools.
 
-weightedPool - operations on Balancer Weighted Pool.
-- Deploy new pool
+* wrappedTokenRateProvider - gets rate for StaticATokenRateProvider
 
-subgraphQueries - Useful Subgraph Info and Querie examples
+* stablePool - operations on Balancer Stable Pool.
+    + Get/Set Amp Factor
+
+* weightedPool - operations on Balancer Weighted Pool.
+    + Deploy new pool
+
+* subgraphQueries - Useful Subgraph Info and Querie examples
+
+### utils
+
+* bignumber.js - Bignumber set up. scale/bnum functions. Constants.
+
+## Useful Info
+
+Adding package from github or local:
+
+* yarn add sor-linear@file:/Users/jg/Documents/sor-sergio
+
+* yarn add sor-linear@github:balancer-labs/balancer-sor#john/linear-package
