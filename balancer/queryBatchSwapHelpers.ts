@@ -212,4 +212,4 @@ async function example() {
 }
 
 // ts-node ./balancer/queryBatchSwapHelpers.ts
-example();
+// example();

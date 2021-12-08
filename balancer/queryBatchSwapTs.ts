@@ -106,7 +106,7 @@ function queryBatchSwapTs(
 
 async function example() {
     // const tokensIn = [AAVE_DAI.address, AAVE_USDC.address, AAVE_USDT.address];
-    const tokensIn = [AAVE_USDT.address];
+    const tokensIn = [AAVE_USDC.address];
     const tokenOut = STABAL3PHANTOM.address;
     // const amounts = [
     //     parseFixed('1', 18),
@@ -136,6 +136,8 @@ async function example() {
         queryResult.assets
     );
 
+    console.log(tokenOut);
+    console.log(queryResult.assets);
     console.log(queryResult.amountTokenOut.toString());
     console.log(queryTsResult.toString());
 }
