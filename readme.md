@@ -20,6 +20,10 @@ Various ABIs.
 
 * wrappedTokenRateProvider - gets rate for StaticATokenRateProvider
 
+* sorBoostedPools.ts - Run a bunch of SOR trades for Boosted Pool paths to test.
+
+* sorSwapExample.ts - Example of using SOR to query a swap.
+
 * stablePool - operations on Balancer Stable Pool.
     + Get/Set Amp Factor
 

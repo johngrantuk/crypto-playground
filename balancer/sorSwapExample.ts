@@ -386,19 +386,19 @@ async function makeTrade(
         overRides['value'] = swapInfo.swapAmount.toString();
     }
 
-    const tx = await vaultContract
-        .connect(wallet)
-        .batchSwap(
-            swapType,
-            swapInfo.swaps,
-            swapInfo.tokenAddresses,
-            funds,
-            limits,
-            deadline,
-            overRides
-        );
+    // const tx = await vaultContract
+    //     .connect(wallet)
+    //     .batchSwap(
+    //         swapType,
+    //         swapInfo.swaps,
+    //         swapInfo.tokenAddresses,
+    //         funds,
+    //         limits,
+    //         deadline,
+    //         overRides
+    //     );
 
-    console.log(`tx: ${tx.hash}`);
+    // console.log(`tx: ${tx.hash}`);
 }
 
 async function makeRelayerTrade(
@@ -569,7 +569,7 @@ async function makeRelayerTrade(
 }
 
 async function simpleSwap() {
-    const networkId = Network.POLYGON;
+    const networkId = Network.KOVAN;
     // const networkId = Network.KOVAN;
     // Pools source can be Subgraph URL or pools data set passed directly
     const poolsSource = SUBGRAPH_URLS[networkId];
@@ -613,5 +613,5 @@ async function simpleSwap() {
     }
 }
 
-// ts-node ./balancer/swapTest.ts
+// ts-node ./balancer/sorSwapExample.ts
 simpleSwap();
