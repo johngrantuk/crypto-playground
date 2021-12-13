@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@balancer-labs/sdk@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@balancer-labs/sdk/-/sdk-0.0.2.tgz#8b7b63a9525a88bef5e30a5a81c7573d0885f564"
-  integrity sha512-Rnme2kFN2VqAF9IuHDRKCC8MNYk6PDuCK9AlzqsylFe3qqtVeVFg0Yluq6pISqUk4bk0l3HVkyA8eoQ/ZgI1xQ==
+"@balancer-labs/sdk@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@balancer-labs/sdk/-/sdk-0.0.5.tgz#77532f4f0fc496ca34a98d04127360844259ef22"
+  integrity sha512-TNLcHfHbaChm8dZYj9wVvnYoUQziJnxvjdfhHxo1P7MdqFRsyAeEggdLmzaVA42us23phnwx87/EK66PO89g3A==
   dependencies:
     "@ethersproject/abi" "^5.5.0"
     "@ethersproject/abstract-signer" "^5.5.0"
@@ -223,13 +223,6 @@
   resolved "https://registry.yarnpkg.com/@ethersproject/logger/-/logger-5.5.0.tgz#0c2caebeff98e10aefa5aef27d7441c7fd18cf5d"
   integrity sha512-rIY/6WPm7T8n3qS2vuHTUBPdXHl+rGxWxW5okDfo9J4Z0+gRRZT0msvUdIJkE4/HS29GUMziwGaaKO2bWONBrg==
 
-"@ethersproject/networks@5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@ethersproject/networks/-/networks-5.5.0.tgz#babec47cab892c51f8dd652ce7f2e3e14283981a"
-  integrity sha512-KWfP3xOnJeF89Uf/FCJdV1a2aDJe5XTN2N52p4fcQ34QhDqQFkgQKZ39VGtiqUgHcLI8DfT0l9azC3KFTunqtA==
-  dependencies:
-    "@ethersproject/logger" "^5.5.0"
-
 "@ethersproject/networks@5.5.1", "@ethersproject/networks@^5.5.0":
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/@ethersproject/networks/-/networks-5.5.1.tgz#b7f7b9fb88dec1ea48f739b7fb9621311aa8ce6c"
@@ -252,10 +245,10 @@
   dependencies:
     "@ethersproject/logger" "^5.5.0"
 
-"@ethersproject/providers@5.5.0", "@ethersproject/providers@^5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@ethersproject/providers/-/providers-5.5.0.tgz#bc2876a8fe5e0053ed9828b1f3767ae46e43758b"
-  integrity sha512-xqMbDnS/FPy+J/9mBLKddzyLLAQFjrVff5g00efqxPzcAwXiR+SiCGVy6eJ5iAIirBOATjx7QLhDNPGV+AEQsw==
+"@ethersproject/providers@5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@ethersproject/providers/-/providers-5.5.1.tgz#ba87e3c93219bbd2e2edf8b369873aee774abf04"
+  integrity sha512-2zdD5sltACDWhjUE12Kucg2PcgM6V2q9JMyVvObtVGnzJu+QSmibbP+BHQyLWZUBfLApx2942+7DC5D+n4wBQQ==
   dependencies:
     "@ethersproject/abstract-provider" "^5.5.0"
     "@ethersproject/abstract-signer" "^5.5.0"
@@ -277,10 +270,10 @@
     bech32 "1.1.4"
     ws "7.4.6"
 
-"@ethersproject/providers@5.5.1":
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/@ethersproject/providers/-/providers-5.5.1.tgz#ba87e3c93219bbd2e2edf8b369873aee774abf04"
-  integrity sha512-2zdD5sltACDWhjUE12Kucg2PcgM6V2q9JMyVvObtVGnzJu+QSmibbP+BHQyLWZUBfLApx2942+7DC5D+n4wBQQ==
+"@ethersproject/providers@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@ethersproject/providers/-/providers-5.5.0.tgz#bc2876a8fe5e0053ed9828b1f3767ae46e43758b"
+  integrity sha512-xqMbDnS/FPy+J/9mBLKddzyLLAQFjrVff5g00efqxPzcAwXiR+SiCGVy6eJ5iAIirBOATjx7QLhDNPGV+AEQsw==
   dependencies:
     "@ethersproject/abstract-provider" "^5.5.0"
     "@ethersproject/abstract-signer" "^5.5.0"
@@ -404,17 +397,6 @@
     "@ethersproject/signing-key" "^5.5.0"
     "@ethersproject/transactions" "^5.5.0"
     "@ethersproject/wordlists" "^5.5.0"
-
-"@ethersproject/web@5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@ethersproject/web/-/web-5.5.0.tgz#0e5bb21a2b58fb4960a705bfc6522a6acf461e28"
-  integrity sha512-BEgY0eL5oH4mAo37TNYVrFeHsIXLRxggCRG/ksRIxI2X5uj5IsjGmcNiRN/VirQOlBxcUhCgHhaDLG4m6XAVoA==
-  dependencies:
-    "@ethersproject/base64" "^5.5.0"
-    "@ethersproject/bytes" "^5.5.0"
-    "@ethersproject/logger" "^5.5.0"
-    "@ethersproject/properties" "^5.5.0"
-    "@ethersproject/strings" "^5.5.0"
 
 "@ethersproject/web@5.5.1", "@ethersproject/web@^5.5.0":
   version "5.5.1"
@@ -679,9 +661,9 @@ bech32@1.1.4:
   integrity sha512-s0IrSOzLlbvX7yp4WBfPITzpAU8sqQcpsmwXDiKwrG4r491vwCO/XpejasRNl0piBMe/DvP4Tz0mIS/X1DPJBQ==
 
 bignumber.js@^9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.0.1.tgz#8d7ba124c882bfd8e43260c67475518d0689e4e5"
-  integrity sha512-IdZR9mh6ahOBv/hYGiXyVuyCetmGJhtYkqLBpTStdhEGjegpPlUawydyaF3pbIOFynJTpllEs+NP+CS9jKFLjA==
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.0.2.tgz#71c6c6bed38de64e24a65ebe16cfcf23ae693673"
+  integrity sha512-GAcQvbpsM0pUb0zw1EI0KhQEZ+lRwR5fYaAp3vPOYuP7aDvGy6cVN6XHLauvF8SOga2y0dcLcjt3iQDTSEliyw==
 
 bn.js@^4.11.9:
   version "4.12.0"
@@ -973,43 +955,7 @@ esutils@^2.0.2:
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
-ethers@^5.2.0:
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/ethers/-/ethers-5.5.1.tgz#d3259a95a42557844aa543906c537106c0406fbf"
-  integrity sha512-RodEvUFZI+EmFcE6bwkuJqpCYHazdzeR1nMzg+YWQSmQEsNtfl1KHGfp/FWZYl48bI/g7cgBeP2IlPthjiVngw==
-  dependencies:
-    "@ethersproject/abi" "5.5.0"
-    "@ethersproject/abstract-provider" "5.5.1"
-    "@ethersproject/abstract-signer" "5.5.0"
-    "@ethersproject/address" "5.5.0"
-    "@ethersproject/base64" "5.5.0"
-    "@ethersproject/basex" "5.5.0"
-    "@ethersproject/bignumber" "5.5.0"
-    "@ethersproject/bytes" "5.5.0"
-    "@ethersproject/constants" "5.5.0"
-    "@ethersproject/contracts" "5.5.0"
-    "@ethersproject/hash" "5.5.0"
-    "@ethersproject/hdnode" "5.5.0"
-    "@ethersproject/json-wallets" "5.5.0"
-    "@ethersproject/keccak256" "5.5.0"
-    "@ethersproject/logger" "5.5.0"
-    "@ethersproject/networks" "5.5.0"
-    "@ethersproject/pbkdf2" "5.5.0"
-    "@ethersproject/properties" "5.5.0"
-    "@ethersproject/providers" "5.5.0"
-    "@ethersproject/random" "5.5.0"
-    "@ethersproject/rlp" "5.5.0"
-    "@ethersproject/sha2" "5.5.0"
-    "@ethersproject/signing-key" "5.5.0"
-    "@ethersproject/solidity" "5.5.0"
-    "@ethersproject/strings" "5.5.0"
-    "@ethersproject/transactions" "5.5.0"
-    "@ethersproject/units" "5.5.0"
-    "@ethersproject/wallet" "5.5.0"
-    "@ethersproject/web" "5.5.0"
-    "@ethersproject/wordlists" "5.5.0"
-
-ethers@^5.5.1:
+ethers@^5.2.0, ethers@^5.5.1:
   version "5.5.2"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-5.5.2.tgz#cd2e508c7342c44fa70392f722e8de8f2416489f"
   integrity sha512-EF5W+6Wwcu6BqVwpgmyR5U2+L4c1FQzlM/02dkZOugN3KF0cG9bzHZP+TDJglmPm2/IzCEJDT7KBxzayk7SAHw==
@@ -1180,18 +1126,18 @@ globby@^11.0.4:
     slash "^3.0.0"
 
 graphql-request@^3.4.0:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-3.6.1.tgz#689cce1da990131b40b05651f9f32bff506a1d8e"
-  integrity sha512-Nm1EasrAQVZllyNTlHDLnLZjlhC6eRWnWP6KH//ytnAL08pjlLkdI2K+s6OV92p45hn5b/kUlLbDwACmRoLwrQ==
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-3.7.0.tgz#c7406e537084f8b9788541e3e6704340ca13055b"
+  integrity sha512-dw5PxHCgBneN2DDNqpWu8QkbbJ07oOziy8z+bK/TAXufsOLaETuVO4GkXrbs0WjhdKhBMN3BkpN/RIvUHkmNUQ==
   dependencies:
     cross-fetch "^3.0.6"
     extract-files "^9.0.0"
     form-data "^3.0.0"
 
 graphql@^15.5.0:
-  version "15.7.2"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.7.2.tgz#85ab0eeb83722977151b3feb4d631b5f2ab287ef"
-  integrity sha512-AnnKk7hFQFmU/2I9YSQf3xw44ctnSFCfp3zE0N6W174gqe9fWG/2rKaKxROK7CcI3XtERpjEKFqts8o319Kf7A==
+  version "15.8.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.8.0.tgz#33410e96b012fa3bdb1091cc99a94769db212b38"
+  integrity sha512-5gghUc24tP9HRznNpV2+FIoq3xKkj5dTQqf4v0CpdPbFVwFkWoxOM+o+2OC9ZSvjEMTjfmG9QT+gcvggTwW1zw==
 
 has-flag@^4.0.0:
   version "4.0.0"
@@ -1565,8 +1511,8 @@ slash@^3.0.0:
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
 "sor-linear@github:balancer-labs/balancer-sor#john/linear-package":
-  version "2.0.0-beta.6"
-  resolved "https://codeload.github.com/balancer-labs/balancer-sor/tar.gz/516e8a6c44171959f651946908d916d1effc18e1"
+  version "2.0.0-beta.9"
+  resolved "https://codeload.github.com/balancer-labs/balancer-sor/tar.gz/e05b184d0478fd682820597146e5ae2de50aa3c2"
   dependencies:
     "@georgeroman/balancer-v2-pools" "^0.0.7"
     isomorphic-fetch "^2.2.1"
