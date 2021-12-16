@@ -14,13 +14,13 @@
     "ts-node": "^10.4.0"
   },
   "dependencies": {
-    "@balancer-labs/sdk": "^0.0.5",
+    "@balancer-labs/sdk": "^0.0.12",
     "@balancer-labs/sor": "^2.0.0-beta.8",
     "@ethersproject/contracts": "^5.5.0",
     "@ethersproject/providers": "^5.5.0",
     "@ethersproject/wallet": "^5.5.0",
     "dotenv": "^10.0.0",
-    "sor-linear": "github:balancer-labs/balancer-sor#john/linear-package",
+    "sor-linear": "npm:@balancer-labs/sor",
     "typescript": "^4.4.4"
   }
 }

@@ -20,7 +20,7 @@ interface TestToken {
 
 // Kovan version
 export const STABAL3PHANTOM: TestToken = {
-    address: '0x21ff756ca0cfcc5fff488ad67babadffee0c4149',
+    address: '0x8fd162f338b770f7e879030830cde9173367f301',
     decimals: 18,
 };
 
@@ -82,6 +82,8 @@ async function runRelayerSwapUnwrapExactIn() {
 
     const balancer = new BalancerSDK(config);
 
+    balancer.swaps.fetchPools([], false);
+
     // Creates fund management info for swap part of call
     const funds: FundManagement = {
         sender: wallet.address,
@@ -115,11 +117,13 @@ async function runRelayerSwapUnwrapExactIn() {
             WRAPPED_AAVE_USDC.address,
             WRAPPED_AAVE_USDT.address,
         ],
-        [parseFixed('1', 16), parseFixed('1', 16), parseFixed('1', 16)],
+        [parseFixed('1', 16).toString(), parseFixed('1', 16).toString(), parseFixed('1', 16).toString()],
         [daiRate, usdcRate, usdtRate],
         funds,
         '50000000000000000' // Slippage 5%
     );
+
+    console.log(txInfo.outputs.amountsOut.toString());
 
     // const relayerContract = new Contract(relayerAddress, balancerRelayerAbi, provider);
     // const tx = await relayerContract.connect(wallet)[txInfo.function](txInfo.params, {
@@ -149,6 +153,8 @@ async function runRelayerSwapUnwrapExactOut() {
 
     const balancer = new BalancerSDK(config);
 
+    balancer.swaps.fetchPools([], true);
+
     // Creates fund management info for swap part of call
     const funds: FundManagement = {
         sender: wallet.address,
@@ -171,6 +177,7 @@ async function runRelayerSwapUnwrapExactOut() {
         provider
     );
 
+    console.log(usdcRate.toString());
     // const txInfo = await balancer.relayer.swapUnwrapAaveStaticExactOut(
     //     [
     //         STABAL3PHANTOM.address,
@@ -283,5 +290,5 @@ async function runRelayerSwapUnwrapExactOut() {
 }
 
 // ts-node sdkTest.ts
-runRelayerSwapUnwrapExactOut();
-// runRelayerSwapUnwrapExactIn();
+// runRelayerSwapUnwrapExactOut();
+runRelayerSwapUnwrapExactIn();

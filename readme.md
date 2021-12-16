@@ -43,3 +43,5 @@ Adding package from github or local:
 * yarn add sor-linear@file:/Users/jg/Documents/sor-sergio
 
 * yarn add sor-linear@github:balancer-labs/balancer-sor#john/linear-package
+
+* yarn add sor-linear@github:balancer-labs/balancer-sor#3d81174608949f8e669af13e7bceec77ba8a8f95
