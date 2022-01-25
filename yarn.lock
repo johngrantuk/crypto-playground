@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@balancer-labs/sdk@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@balancer-labs/sdk/-/sdk-0.0.12.tgz#07bab1a9634e46b669a29644f8fc320ba739d0c2"
-  integrity sha512-WwpxBwGhqrug4EHjItDTtSJCUIzPuQHa46ZBtdX3pWLzVQ8DtbUcPGyVqugMnFIjpc6x6/9BuAF9C1CN7aQSUA==
+"@balancer-labs/sdk@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@balancer-labs/sdk/-/sdk-0.0.13.tgz#830dec4266f54b723ed87e3c171083ec0a076056"
+  integrity sha512-wwZSNLGMm5LFlL2IilGHyaCizgZ2W5nVhLut9HFSLpVmEMQ/6ruowjM1Al/xYn5QCtZyvdEfLrUxFGDDmNq3eA==
   dependencies:
-    "@balancer-labs/sor" "^2.1.0-beta.2"
+    "@balancer-labs/sor" "^2.1.0-beta.3"
     "@ethersproject/abi" "^5.5.0"
     "@ethersproject/abstract-signer" "^5.5.0"
     "@ethersproject/contracts" "^5.5.0"
@@ -15,27 +15,14 @@
     ethers "^5.5.1"
     lodash "^4.17.21"
 
-"@balancer-labs/sor@^2.0.0-beta.8":
-  version "2.0.0-beta.9"
-  resolved "https://registry.yarnpkg.com/@balancer-labs/sor/-/sor-2.0.0-beta.9.tgz#80ae96a38449810991f52dde01412319acf04f44"
-  integrity sha512-sOdDFh9pQEJvMp2mtsoQ4uPQQ8KjIxlIGAGwLSyNixVS52U23mBl+UpjpCB3ktL0DsloIQmnpE+/DOANgJhynA==
-  dependencies:
-    "@georgeroman/balancer-v2-pools" "^0.0.5"
-    isomorphic-fetch "^2.2.1"
-
-"@balancer-labs/sor@^2.1.0-beta.2", "sor-linear@npm:@balancer-labs/sor":
-  version "2.1.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@balancer-labs/sor/-/sor-2.1.0-beta.2.tgz#06a244d967c10b69e8e785142e4bea60328b34cb"
-  integrity sha512-YO+EErxI8aUceXDMWgibleMtkbrqkN30iv55mCt/OTqj9vP6786t2rvZRTnmOACGiO+waKDSsqBOWgGMf/MDRA==
+"@balancer-labs/sor@^2.1.0-beta.3":
+  version "2.1.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@balancer-labs/sor/-/sor-2.1.0-beta.3.tgz#252f883dab1efa3e76abcb352402c2fe2b8180ba"
+  integrity sha512-ZXRzp8VW2l3h4paCYReB/Sf5Xf/EeOkDqv/laKn3HXH4GxaXIeYRIxlTTi1eTsGFLb9zJ+xlLfuDTvq9IBuqMQ==
   dependencies:
     "@georgeroman/balancer-v2-pools" "0.0.7"
     isomorphic-fetch "^2.2.1"
     sdk-latest "npm:@georgeroman/balancer-v2-pools"
-
-"@balancer-labs/v2-deployments@^1.0.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@balancer-labs/v2-deployments/-/v2-deployments-1.1.1.tgz#bd9c3267f3e068eb04b72e90bead7af91c3c6904"
-  integrity sha512-emB/xHCM/njxpReZQx2BqzHXwrWF+iIwn/hSwnSOxp+P6GH0rOaboio6/+Aapj7f9tCCjqRspetX//9TumX82Q==
 
 "@balancer-labs/v2-deployments@^2.1.3":
   version "2.3.0"
@@ -414,17 +401,6 @@
   resolved "https://registry.yarnpkg.com/@georgeroman/balancer-v2-pools/-/balancer-v2-pools-0.0.7.tgz#eb197b7da7340878b14f4d6b892f0a27f8a79b66"
   integrity sha512-tlEbAun1Fjwa/GFKBYwO3/IfkhemyyZ16DJjKStstYVOF2X+Tka7AHaAc3Xi3o/a4TWD1/NrRAI98PSzAGVQ8Q==
   dependencies:
-    bignumber.js "^9.0.1"
-    ethers "^5.2.0"
-    graphql "^15.5.0"
-    graphql-request "^3.4.0"
-
-"@georgeroman/balancer-v2-pools@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@georgeroman/balancer-v2-pools/-/balancer-v2-pools-0.0.5.tgz#e1a42be638803122196fd1a13b9fbed624f54549"
-  integrity sha512-fx+QmDJ80+E4RoaBfmnKFaOlRLM/FSbzksaTrqXM+0EeWX5Zu99SO03pjTIBDsBifq2WfHBcCU5CW5ulGF/kkg==
-  dependencies:
-    "@balancer-labs/v2-deployments" "^1.0.0"
     bignumber.js "^9.0.1"
     ethers "^5.2.0"
     graphql "^15.5.0"
@@ -1489,6 +1465,15 @@ slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
+
+"sor-linear@npm:@balancer-labs/sor":
+  version "2.1.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@balancer-labs/sor/-/sor-2.1.0-beta.2.tgz#06a244d967c10b69e8e785142e4bea60328b34cb"
+  integrity sha512-YO+EErxI8aUceXDMWgibleMtkbrqkN30iv55mCt/OTqj9vP6786t2rvZRTnmOACGiO+waKDSsqBOWgGMf/MDRA==
+  dependencies:
+    "@georgeroman/balancer-v2-pools" "0.0.7"
+    isomorphic-fetch "^2.2.1"
+    sdk-latest "npm:@georgeroman/balancer-v2-pools"
 
 strip-ansi@^6.0.1:
   version "6.0.1"

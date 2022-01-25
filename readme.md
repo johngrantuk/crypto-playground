@@ -36,6 +36,10 @@ Various ABIs.
 
 * bignumber.js - Bignumber set up. scale/bnum functions. Constants.
 
+### examples
+
+* decodeExample.ts - Some examples of decoding binary formats using defaultAbiCoder and Interface decodeFunctionData.
+
 ## Useful Info
 
 Adding package from github or local:
