@@ -2,34 +2,21 @@
 # yarn lockfile v1
 
 
-"@balancer-labs/sdk@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@balancer-labs/sdk/-/sdk-0.1.4.tgz#d22017dec59ec7d8ff541260a795c0669ec4ce8e"
-  integrity sha512-OcF6q0+Z3e+CQzwVn0gAb/f0iixBN7buECK4164sCOcaE9RlA2vRhT7+8GIbwEiNljrh8fOqj5l2SFehOw80Xg==
+"@balancer-labs/sdk@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@balancer-labs/sdk/-/sdk-0.1.5.tgz#9f259a87dc1875f5a05d716ef4f07fea89c7e253"
+  integrity sha512-NPHeFCjeCQGrSGLrUZE0vYHEURQ2WAtUl5kMQjewNHcooPAwmIC98N1GQfilH4Or8XcDTgbskZ0vednIAsYbnA==
   dependencies:
-    "@balancer-labs/sor" "^4.0.0-beta.0"
-    "@ethersproject/abi" "^5.5.0"
-    "@ethersproject/abstract-signer" "^5.5.0"
-    "@ethersproject/contracts" "^5.5.0"
-    "@ethersproject/providers" "^5.5.0"
+    "@balancer-labs/sor" "^4.0.0-beta.1"
     axios "^0.24.0"
     graphql "^15.6.1"
     graphql-request "^3.5.0"
     lodash "^4.17.21"
 
-"@balancer-labs/sor@^2.1.0-beta.3":
-  version "2.1.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@balancer-labs/sor/-/sor-2.1.0-beta.3.tgz#252f883dab1efa3e76abcb352402c2fe2b8180ba"
-  integrity sha512-ZXRzp8VW2l3h4paCYReB/Sf5Xf/EeOkDqv/laKn3HXH4GxaXIeYRIxlTTi1eTsGFLb9zJ+xlLfuDTvq9IBuqMQ==
-  dependencies:
-    "@georgeroman/balancer-v2-pools" "0.0.7"
-    isomorphic-fetch "^2.2.1"
-    sdk-latest "npm:@georgeroman/balancer-v2-pools"
-
-"@balancer-labs/sor@^4.0.0-beta.0":
-  version "4.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@balancer-labs/sor/-/sor-4.0.0-beta.0.tgz#f890afdc7d7967ad04adfa6040d8745cb66e37e1"
-  integrity sha512-igLXKqt5+rIr/fOJtr92rgU1tkECfa+Y++IPpC6ibb28WZvNRcA1mbf+1lL4lxdioK17m3cQFt4gx4G7nS/Nvw==
+"@balancer-labs/sor@^4.0.0-beta.1":
+  version "4.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@balancer-labs/sor/-/sor-4.0.0-beta.1.tgz#fb8b3f2d9bb5cec5c79446e0062aab7cdfcabccb"
+  integrity sha512-L3eMBRA51egMNKHkLktOr3sNJuqgoz24AfJkpzU4w1I66m9HlOPY/E3FgYKWO+1cXJ2sQZWDH3pEjnWMRnNbNg==
   dependencies:
     isomorphic-fetch "^2.2.1"
 
