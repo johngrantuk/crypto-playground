@@ -9,6 +9,8 @@ dotenv.config();
 
 /**
  * Examples showing how core 0x functions can be used. Has basic benchmarking.
+ * Add a root .env file with INFURA=your-infura-key
+ * Run using: ts-node balancer/0x/example.ts
  */
 async function example(): Promise<void> {
     console.log('Running example...');
