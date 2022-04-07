@@ -28,33 +28,57 @@ async function example(): Promise<void> {
     // Retrieves and caches latest swap info for a token pair
     console.log(`_fetchSwapInfoForPairAsync...`);
     console.time('_fetchSwapInfoForPairAsync');
-    const swapInfo = await balancerV2._getAndSaveFreshSwapInfoForPairAsync(
+    const swaps = await balancerV2._getAndSaveFreshSwapInfoForPairAsync(
         takerToken,
         makerToken
     );
     console.timeEnd('_fetchSwapInfoForPairAsync');
     console.log(`SwapInfo:`);
-    swapInfo.forEach((s) => {
+    swaps.swapInfoExactIn.forEach((s) => {
         console.log(s.swapSteps);
         console.log(s.assets);
     });
 
-    // Retrieve cached swap info for pair
+    // Retrieve cached swap info for pair - this get info for ExactIn and ExactOut swap types
     console.log(`Cached WETH/BAL:`);
-    const cachedSwapInfo = balancerV2.getCachedSwapInfoForPair(
+    const cachedSwaps = balancerV2.getCachedSwapInfoForPair(
         takerToken,
         makerToken
     );
     // cached info should be same as original retrieved
-    console.log(`Cache is equal: ${_.isEqual(swapInfo, cachedSwapInfo)}`);
+    console.log(
+        `Cache is equal: ${_.isEqual(
+            swaps.swapInfoExactIn,
+            cachedSwaps.swapInfoExactIn
+        )}`
+    );
+    console.log(
+        `Cache is equal: ${_.isEqual(
+            swaps.swapInfoExactOut,
+            cachedSwaps.swapInfoExactOut
+        )}`
+    );
 
     // Can use swap info and queryBatchSwap to get price info
     const swapAmount = parseFixed('1', 18);
-    for (let i = 0; i < cachedSwapInfo.length; i++) {
+    const amountsOut = [];
+    // ExactIn swaps
+    for (let i = 0; i < cachedSwaps.swapInfoExactIn.length; i++) {
         const deltas = await balancerV2.queryBatchSwap(
-            cachedSwapInfo[i],
+            cachedSwaps.swapInfoExactIn[i],
             SwapType.SwapExactIn,
             swapAmount.toString()
+        );
+        console.log(deltas.toString());
+        amountsOut.push(deltas[deltas.length - 1].split('-')[1]);
+    }
+
+    // ExactOut swaps
+    for (let i = 0; i < cachedSwaps.swapInfoExactOut.length; i++) {
+        const deltas = await balancerV2.queryBatchSwap(
+            cachedSwaps.swapInfoExactOut[i],
+            SwapType.SwapExactOut,
+            amountsOut[i]
         );
         console.log(deltas.toString());
     }

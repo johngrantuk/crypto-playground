@@ -14,7 +14,7 @@
     "ts-node": "^10.4.0"
   },
   "dependencies": {
-    "@balancer-labs/sdk": "^0.1.5",
+    "@balancer-labs/sdk": "^0.1.6",
     "@ethersproject/contracts": "^5.5.0",
     "@ethersproject/providers": "^5.5.0",
     "@ethersproject/wallet": "^5.5.0",
