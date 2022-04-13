@@ -1,4 +1,3 @@
-import { parseFixed, BigNumber } from '@ethersproject/bignumber';
 import {
     BalancerSDK,
     BalancerSdkConfig,
@@ -10,7 +9,6 @@ import {
     PoolDictionary,
     formatSequence,
     getTokenAddressesForSwap,
-    SwapType,
 } from '@balancer-labs/sdk';
 import { SubgraphPoolDataService } from './sgPoolDataService';
 import { Pool, _loadTopPoolsAsyncOld } from './originalFunctions';
@@ -76,7 +74,7 @@ export class BalancerV2SwapInfoCache {
         this._cache = {};
         const config: BalancerSdkConfig = {
             network: Network[ChainId[chainId]],
-            rpcUrl: `https://mainnet.infura.io/v3/${process.env.INFURA}`,
+            rpcUrl: `not_needed`, // `https://mainnet.infura.io/v3/${process.env.INFURA}`,
         };
         const balancerSdk = new BalancerSDK(config);
         this.balancerSdk = balancerSdk;
@@ -314,27 +312,5 @@ export class BalancerV2SwapInfoCache {
             );
         }
         return this._cache[key].balancerSwaps;
-    }
-
-    /**
-     * Simulates a call to batchSwap, returning an array of Vault asset deltas.
-     * Note - only works for a single tokenIn > tokenOut swap sequence (can be multihop)
-     * @param {BalancerSwapInfo} swapInfo Swap steps and assets.
-     * @param swapType either exactIn or exactOut.
-     * @param swapAmount Amount for first swap in sequence.
-     * @returns Vault asset deltas. Positive amounts represent tokens sent to the Vault, and negative amounts represent tokens sent by the Vault.
-     */
-    async queryBatchSwap(
-        swapInfo: BalancerSwapInfo,
-        swapType: SwapType,
-        swapAmount: string
-    ): Promise<string[]> {
-        // Replaces amount for first swap in sequence.
-        swapInfo.swapSteps[0].amount = swapAmount;
-        return await this.balancerSdk.swaps.queryBatchSwap({
-            kind: swapType,
-            swaps: swapInfo.swapSteps,
-            assets: swapInfo.assets,
-        });
     }
 }

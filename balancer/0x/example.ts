@@ -1,11 +1,49 @@
 import dotenv from 'dotenv';
 import { parseFixed } from '@ethersproject/bignumber';
 import _ from 'lodash';
-import { SwapType } from '@balancer-labs/sdk';
+import {
+    SwapType,
+    BalancerSdkConfig,
+    Network,
+    BalancerSDK,
+} from '@balancer-labs/sdk';
 
-import { BalancerV2SwapInfoCache, ChainId } from './balancer_v2_utils';
+import {
+    BalancerV2SwapInfoCache,
+    ChainId,
+    BalancerSwapInfo,
+} from './balancer_v2_utils';
 
 dotenv.config();
+
+/**
+ * Simulates a call to batchSwap, returning an array of Vault asset deltas.
+ * Note - only works for a single tokenIn > tokenOut swap sequence (can be multihop)
+ * @param {BalancerSwapInfo} swapInfo Swap steps and assets.
+ * @param swapType either exactIn or exactOut.
+ * @param swapAmount Amount for first swap in sequence.
+ * @param chainId Chain ID.
+ * @returns Vault asset deltas. Positive amounts represent tokens sent to the Vault, and negative amounts represent tokens sent by the Vault.
+ */
+async function queryBatchSwap(
+    swapInfo: BalancerSwapInfo,
+    swapType: SwapType,
+    swapAmount: string,
+    chainId: number
+): Promise<string[]> {
+    const config: BalancerSdkConfig = {
+        network: Network[ChainId[chainId]],
+        rpcUrl: `https://mainnet.infura.io/v3/${process.env.INFURA}`,
+    };
+    const balancerSdk = new BalancerSDK(config);
+    // Replaces amount for first swap in sequence.
+    swapInfo.swapSteps[0].amount = swapAmount;
+    return await balancerSdk.swaps.queryBatchSwap({
+        kind: swapType,
+        swaps: swapInfo.swapSteps,
+        assets: swapInfo.assets,
+    });
+}
 
 /**
  * Examples showing how core 0x functions can be used. Has basic benchmarking.
@@ -64,10 +102,11 @@ async function example(): Promise<void> {
     const amountsOut = [];
     // ExactIn swaps
     for (let i = 0; i < cachedSwaps.swapInfoExactIn.length; i++) {
-        const deltas = await balancerV2.queryBatchSwap(
+        const deltas = await queryBatchSwap(
             cachedSwaps.swapInfoExactIn[i],
             SwapType.SwapExactIn,
-            swapAmount.toString()
+            swapAmount.toString(),
+            ChainId.MAINNET
         );
         console.log(deltas.toString());
         amountsOut.push(deltas[deltas.length - 1].split('-')[1]);
@@ -75,10 +114,11 @@ async function example(): Promise<void> {
 
     // ExactOut swaps
     for (let i = 0; i < cachedSwaps.swapInfoExactOut.length; i++) {
-        const deltas = await balancerV2.queryBatchSwap(
+        const deltas = await queryBatchSwap(
             cachedSwaps.swapInfoExactOut[i],
             SwapType.SwapExactOut,
-            amountsOut[i]
+            amountsOut[i],
+            ChainId.MAINNET
         );
         console.log(deltas.toString());
     }
