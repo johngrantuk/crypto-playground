@@ -74,7 +74,7 @@ export class BalancerV2SwapInfoCache {
         this._cache = {};
         const config: BalancerSdkConfig = {
             network: Network[ChainId[chainId]],
-            rpcUrl: `not_needed`, // `https://mainnet.infura.io/v3/${process.env.INFURA}`,
+            rpcUrl: ``, // `https://mainnet.infura.io/v3/${process.env.INFURA}`,
         };
         const balancerSdk = new BalancerSDK(config);
         this.balancerSdk = balancerSdk;

@@ -271,9 +271,9 @@ async function getSwap(
 
     await sor.fetchPools();
     const pools = sor.getPools();
-    pools.forEach((p) => {
-        console.log(p.id);
-    });
+    // pools.forEach((p) => {
+    //     console.log(p.id);
+    // });
 
     // gasPrice is used by SOR as a factor to determine how many pools to swap against.
     // i.e. higher cost means more costly to trade against lots of different pools.
@@ -622,8 +622,8 @@ export async function simpleSwap() {
     const networkId = Network.POLYGON;
     // Pools source can be Subgraph URL or pools data set passed directly
     // Update pools list with most recent onchain balances
-    const tokenIn = ADDRESSES[networkId].PAR;
-    const tokenOut = ADDRESSES[networkId].MIMO;
+    const tokenIn = ADDRESSES[networkId].WETH;
+    const tokenOut = ADDRESSES[networkId].DAI;
     const swapType = SwapTypes.SwapExactIn;
     const swapAmount = parseFixed('10', 18);
     const executeTrade = true;
