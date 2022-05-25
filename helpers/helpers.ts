@@ -1,15 +1,17 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
 import { Contract } from '@ethersproject/contracts';
 import { getProvider, getWallet } from '../constants/network';
 import { MaxUint256 } from '@ethersproject/constants';
 
 import ERC20Abi from '../abi/ERC20.json';
 
+dotenv.config();
+
 export async function tokensApprove(
     tokens: string[],
     addressToApprove: string,
     amountToApprove: string = MaxUint256.toString(),
-    provider = getProvider(),
+    provider = getProvider(1),
     wallet = getWallet(provider)
 ) {
     for (const token of tokens) {

@@ -13,7 +13,7 @@ export const PROVIDER_URLS = {
     [Network.MAINNET]: `https://mainnet.infura.io/v3/${process.env.INFURA}`,
     [Network.GOERLI]: `https://goerli.infura.io/v3/${process.env.INFURA}`,
     [Network.KOVAN]: `https://kovan.infura.io/v3/${process.env.INFURA}`,
-    [Network.POLYGON]: `https://rpc-mainnet.matic.network`,
+    [Network.POLYGON]: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA}`,
     [Network.ARBITRUM]: `https://arb1.arbitrum.io/rpc`,
 };
 
