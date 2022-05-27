@@ -27,16 +27,32 @@ const SWAPS = {
         swapType: SwapTypes.SwapExactIn,
         swaps: [
             {
-                poolId: '0xcd32a460b6fecd053582e43b07ed6e2c04e1536900000000000000000000023c',
+                poolId: '0x96646936b91d6b9d7d0c47c496afbf3d6ec7b6f8000200000000000000000019',
                 assetInIndex: 0,
                 assetOutIndex: 1,
-                amount: '491230980000000000000',
+                amount: '1000000000000000000',
                 userData: '0x',
             },
         ],
         assets: [
-            '0xff795577d9ac8bd7d90ee22b6c1703490b6512fd',
-            '0xcd32a460b6fecd053582e43b07ed6e2c04e15369',
+            '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
+            '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
+        ],
+    },
+    SINGLE_STABLE: {
+        swapType: SwapTypes.SwapExactIn,
+        swaps: [
+            {
+                poolId: '0x06df3b2bbb68adc8b0e302443692037ed9f91b42000000000000000000000063',
+                assetInIndex: 0,
+                assetOutIndex: 1,
+                amount: '1837703247',
+                userData: '0x',
+            },
+        ],
+        assets: [
+            '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
+            '0x6b175474e89094c44da98b954eedeac495271d0f',
         ],
     },
     'DAI-STABAL3-USDC': {
@@ -150,24 +166,35 @@ export async function queryBatchSwap(
 }
 
 async function fullQuery() {
-    const networkId = Network.KOVAN;
+    const networkId = Network.MAINNET;
     const provider = new JsonRpcProvider(PROVIDER_URLS[networkId]);
     const vaultContract = new Contract(balancerVault, vaultAbi, provider);
 
     // await getRate('0x26575A44755E0aaa969FDda1E4291Df22C5624Ea'); // Rate for Kovan waDAI
     // await getRate('0x26743984e3357efc59f2fd6c1afdc310335a61c9'); // Rate for Kovan waUSDC
-    await getRate('0xbfd9769b061e57e478690299011a028194d66e3c'); // Rate for Kovan waUSDT
+    // await getRate('0xbfd9769b061e57e478690299011a028194d66e3c'); // Rate for Kovan waUSDT
     const deltas = await queryBatchSwap(
         vaultContract,
-        SWAPS['aUSDT-staBAL3'].swapType,
-        SWAPS['aUSDT-staBAL3'].swaps,
-        SWAPS['aUSDT-staBAL3'].assets
+        SWAPS.SINGLE.swapType,
+        SWAPS.SINGLE.swaps,
+        SWAPS.SINGLE.assets
     );
 
     console.log(deltas.toString());
+    console.log(deltas[1].toString().split('-')[1]);
+    SWAPS.SINGLE_STABLE.swaps[0].amount = deltas[1].toString().split('-')[1];
+
+    const stabledeltas = await queryBatchSwap(
+        vaultContract,
+        SWAPS.SINGLE_STABLE.swapType,
+        SWAPS.SINGLE_STABLE.swaps,
+        SWAPS.SINGLE_STABLE.assets
+    );
+
+    console.log(stabledeltas.toString());
     // await getRate('0x26575A44755E0aaa969FDda1E4291Df22C5624Ea');
-    await getRate('0xbfd9769b061e57e478690299011a028194d66e3c');
+    // await getRate('0xbfd9769b061e57e478690299011a028194d66e3c');
 }
 
 // ts-node ./balancer/queryBatchSwap.ts
-// fullQuery();
+fullQuery();

@@ -390,13 +390,13 @@ async function makeRelayerTrade(
 }
 
 export async function simpleSwap() {
-    const networkId = Network.POLYGON;
+    const networkId = Network.MAINNET;
     // Pools source can be Subgraph URL or pools data set passed directly
     // Update pools list with most recent onchain balances
-    const tokenIn = ADDRESSES[networkId].MATIC;
-    const tokenOut = ADDRESSES[networkId].RAINBOW;
+    const tokenIn = ADDRESSES[networkId].WETH;
+    const tokenOut = ADDRESSES[networkId].DAI;
     const swapType = SwapTypes.SwapExactIn;
-    const swapAmount = parseFixed('300000', 18);
+    const swapAmount = parseFixed('1', 18);
     const executeTrade = true;
 
     console.log(PROVIDER_URLS[networkId]);
@@ -425,5 +425,5 @@ export async function simpleSwap() {
     }
 }
 
-// $ TS_NODE_PROJECT='tsconfig.json' ts-node ./balancer/sorSwapSdk.ts
+// $ TS_NODE_PROJECT='tsconfig.json' ts-node ./balancer/sdk-sorSwap.ts
 simpleSwap();

@@ -72,7 +72,8 @@ async function example(): Promise<void> {
     );
     console.timeEnd('_fetchSwapInfoForPairAsync');
     console.log(`SwapInfo:`);
-    swaps.swapInfoExactIn.forEach((s) => {
+    swaps.swapInfoExactIn.forEach((s, i) => {
+        console.log(`Swap ${i}`);
         console.log(s.swapSteps);
         console.log(s.assets);
     });
@@ -111,7 +112,7 @@ async function example(): Promise<void> {
         console.log(deltas.toString());
         amountsOut.push(deltas[deltas.length - 1].split('-')[1]);
     }
-
+    console.log('ExactOut:');
     // ExactOut swaps
     for (let i = 0; i < cachedSwaps.swapInfoExactOut.length; i++) {
         const deltas = await queryBatchSwap(
