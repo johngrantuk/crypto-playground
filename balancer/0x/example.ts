@@ -54,7 +54,7 @@ async function example(): Promise<void> {
     console.log('Running example...');
     // BAL/WETH has most paths so this is worst case in terms of processing
     const takerToken = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2';
-    const makerToken = '0xba100000625a3754423978a60c9317c58a424e3d';
+    const makerToken = '0x6B175474E89094C44Da98b954EedeAC495271d0F'.toLowerCase();
     const balancerV2 = new BalancerV2SwapInfoCache(ChainId.MAINNET);
 
     // This funtion is normally called as part of the constructor
@@ -103,26 +103,31 @@ async function example(): Promise<void> {
     const amountsOut = [];
     // ExactIn swaps
     for (let i = 0; i < cachedSwaps.swapInfoExactIn.length; i++) {
-        const deltas = await queryBatchSwap(
-            cachedSwaps.swapInfoExactIn[i],
-            SwapType.SwapExactIn,
-            swapAmount.toString(),
-            ChainId.MAINNET
-        );
-        console.log(deltas.toString());
-        amountsOut.push(deltas[deltas.length - 1].split('-')[1]);
+        try {
+            console.log(i)
+            const deltas = await queryBatchSwap(
+                cachedSwaps.swapInfoExactIn[i],
+                SwapType.SwapExactIn,
+                swapAmount.toString(),
+                ChainId.MAINNET
+            );
+            console.log(deltas.toString());
+            amountsOut.push(deltas[deltas.length - 1].split('-')[1]);
+        } catch (err) {
+            console.log(`Not valid: ${err}`);
+        }
     }
-    console.log('ExactOut:');
-    // ExactOut swaps
-    for (let i = 0; i < cachedSwaps.swapInfoExactOut.length; i++) {
-        const deltas = await queryBatchSwap(
-            cachedSwaps.swapInfoExactOut[i],
-            SwapType.SwapExactOut,
-            amountsOut[i],
-            ChainId.MAINNET
-        );
-        console.log(deltas.toString());
-    }
+    // console.log('ExactOut:');
+    // // ExactOut swaps
+    // for (let i = 0; i < cachedSwaps.swapInfoExactOut.length; i++) {
+    //     const deltas = await queryBatchSwap(
+    //         cachedSwaps.swapInfoExactOut[i],
+    //         SwapType.SwapExactOut,
+    //         amountsOut[i],
+    //         ChainId.MAINNET
+    //     );
+    //     console.log(deltas.toString());
+    // }
 }
 
 example();

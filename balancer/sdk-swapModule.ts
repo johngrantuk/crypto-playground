@@ -17,7 +17,7 @@ export async function simpleSwap() {
     const tokenIn = ADDRESSES[network].WETH;
     const tokenOut = ADDRESSES[network].DAI;
     const swapType = SwapTypes.SwapExactIn;
-    const amount = parseFixed('0.00001', 18);
+    const amount = parseFixed('1', 18);
     const provider = new JsonRpcProvider(rpcUrl, network);
 
     const balancer = new BalancerSDK({

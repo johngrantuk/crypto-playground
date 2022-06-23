@@ -1,5 +1,4 @@
-// Example showing SOR with Vault batchSwap and Subgraph pool data, run using: $ TS_NODE_PROJECT='tsconfig.testing.json' ts-node ./test/testScripts/swapExample.ts
-
+// Example showing SOR with Vault batchSwap and Subgraph pool data, run using: $ TS_NODE_PROJECT='tsconfig.testing.json' ts-node ./balancer/sdk-sorSwap.ts
 import dotenv from 'dotenv';
 dotenv.config();
 import {
