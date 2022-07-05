@@ -41,6 +41,16 @@ export const ADDRESSES = {
             decimals: 18,
             symbol: 'ETH',
         },
+        auraBal: {
+            address: '0x616e8BfA43F920657B3497DBf40D6b1A02D4608d',
+            decimals: 18,
+            symbol: 'auraBal',
+        },
+        balBpt: {
+            address: '0x5c6ee304399dbdb9c8ef030ab642b10820db8f56',
+            decimals: 18,
+            symbol: 'B-80BAL-20WETH',
+        },
         BAL: {
             address: '0xba100000625a3754423978a60c9317c58a424e3d',
             decimals: 18,
