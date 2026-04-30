@@ -1,0 +1,353 @@
+[
+  {
+    "poolAddress": "0x10bdbb4fe8dfd348d44397eedabb737df68bc9a0",
+    "poolId": "0x10bdbb4fe8dfd348d44397eedabb737df68bc9a0000200000000000000000248",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "8137.01",
+      "lifetimeVolume": "1849321.48",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x10bdbb4fe8dfd348d44397eedabb737df68bc9a0000200000000000000000248"
+  },
+  {
+    "poolAddress": "0x0c398c663253ffb78a4d2badbe33bbb8a9e9c671",
+    "poolId": "0x0c398c663253ffb78a4d2badbe33bbb8a9e9c671000200000000000000000242",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "2176.68",
+      "lifetimeVolume": "494699.96",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x0c398c663253ffb78a4d2badbe33bbb8a9e9c671000200000000000000000242"
+  },
+  {
+    "poolAddress": "0x16ce7de9f88e8860db0419c419c504b6fae6e575",
+    "poolId": "0x16ce7de9f88e8860db0419c419c504b6fae6e575000200000000000000000254",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "1875.60",
+      "lifetimeVolume": "426272.66",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.29",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x16ce7de9f88e8860db0419c419c504b6fae6e575000200000000000000000254"
+  },
+  {
+    "poolAddress": "0xb18bc490322f38ec5c9aa967505020600778bd9d",
+    "poolId": "0xb18bc490322f38ec5c9aa967505020600778bd9d000200000000000000000256",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "1233.75",
+      "lifetimeVolume": "280396.76",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xb18bc490322f38ec5c9aa967505020600778bd9d000200000000000000000256"
+  },
+  {
+    "poolAddress": "0xd8ddffaaea64d4adffa61ab16634109b8e64d1f4",
+    "poolId": "0xd8ddffaaea64d4adffa61ab16634109b8e64d1f4000200000000000000000260",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "559.08",
+      "lifetimeVolume": "127063.71",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.28",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xd8ddffaaea64d4adffa61ab16634109b8e64d1f4000200000000000000000260"
+  },
+  {
+    "poolAddress": "0xd835f9580fdc16eef56769e2976242c0fe00edad",
+    "poolId": "0xd835f9580fdc16eef56769e2976242c0fe00edad000200000000000000000261",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "448.00",
+      "lifetimeVolume": "101817.65",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xd835f9580fdc16eef56769e2976242c0fe00edad000200000000000000000261"
+  },
+  {
+    "poolAddress": "0x11ffbd325f4c34fe3399101fd3bcba910928dcc7",
+    "poolId": "0x11ffbd325f4c34fe3399101fd3bcba910928dcc7000200000000000000000259",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "440.81",
+      "lifetimeVolume": "100184.92",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x11ffbd325f4c34fe3399101fd3bcba910928dcc7000200000000000000000259"
+  },
+  {
+    "poolAddress": "0x8a798d8f948ad572e5993d83fbcec9e259a58f1e",
+    "poolId": "0x8a798d8f948ad572e5993d83fbcec9e259a58f1e00020000000000000000025a",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "416.55",
+      "lifetimeVolume": "94671.21",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.65",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x8a798d8f948ad572e5993d83fbcec9e259a58f1e00020000000000000000025a"
+  },
+  {
+    "poolAddress": "0x3873dc021064f95e829e6a3b6e6d4fae180cda7f",
+    "poolId": "0x3873dc021064f95e829e6a3b6e6d4fae180cda7f000200000000000000000263",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "407.61",
+      "lifetimeVolume": "92638.57",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x3873dc021064f95e829e6a3b6e6d4fae180cda7f000200000000000000000263"
+  },
+  {
+    "poolAddress": "0x433be8f933061021e05cc4aefbfbb58280af3ab9",
+    "poolId": "0x433be8f933061021e05cc4aefbfbb58280af3ab900020000000000000000025e",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "394.29",
+      "lifetimeVolume": "89612.23",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.47",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x433be8f933061021e05cc4aefbfbb58280af3ab900020000000000000000025e"
+  },
+  {
+    "poolAddress": "0x1beb3dd9361dd7f57dcfe80eeacc2af3bd973fc2",
+    "poolId": "0x1beb3dd9361dd7f57dcfe80eeacc2af3bd973fc2000200000000000000000298",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "375.78",
+      "lifetimeVolume": "85403.89",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x1beb3dd9361dd7f57dcfe80eeacc2af3bd973fc2000200000000000000000298"
+  },
+  {
+    "poolAddress": "0x1d90f4d2d5fcebfe5afc4f2ce4ceb009e6a91816",
+    "poolId": "0x1d90f4d2d5fcebfe5afc4f2ce4ceb009e6a9181600020000000000000000025f",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "373.57",
+      "lifetimeVolume": "84901.47",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x1d90f4d2d5fcebfe5afc4f2ce4ceb009e6a9181600020000000000000000025f"
+  },
+  {
+    "poolAddress": "0x4da5b4f7f58c5c4744af7f6f43ace7a34dfe7bac",
+    "poolId": "0x4da5b4f7f58c5c4744af7f6f43ace7a34dfe7bac00020000000000000000025d",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "328.28",
+      "lifetimeVolume": "74608.18",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x4da5b4f7f58c5c4744af7f6f43ace7a34dfe7bac00020000000000000000025d"
+  },
+  {
+    "poolAddress": "0xf58aa4e06e935eb217de308acd89b23719b4550f",
+    "poolId": "0xf58aa4e06e935eb217de308acd89b23719b4550f000200000000000000000258",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "315.73",
+      "lifetimeVolume": "71756.37",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.57",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xf58aa4e06e935eb217de308acd89b23719b4550f000200000000000000000258"
+  },
+  {
+    "poolAddress": "0xfcbb01014569c3fe53ea571e589f38c3ba480b0a",
+    "poolId": "0xfcbb01014569c3fe53ea571e589f38c3ba480b0a000200000000000000000299",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "282.24",
+      "lifetimeVolume": "64145.16",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xfcbb01014569c3fe53ea571e589f38c3ba480b0a000200000000000000000299"
+  },
+  {
+    "poolAddress": "0x472a57f8a911ea5b7f9c06911415eacb3045e2ae",
+    "poolId": "0x472a57f8a911ea5b7f9c06911415eacb3045e2ae000200000000000000000252",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "282.01",
+      "lifetimeVolume": "64092.58",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.35",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x472a57f8a911ea5b7f9c06911415eacb3045e2ae000200000000000000000252"
+  },
+  {
+    "poolAddress": "0xf62e7001b57ac9f47f2d22cb6184f48506a2a7b6",
+    "poolId": "0xf62e7001b57ac9f47f2d22cb6184f48506a2a7b600020000000000000000025c",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "281.99",
+      "lifetimeVolume": "64089.19",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.58",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xf62e7001b57ac9f47f2d22cb6184f48506a2a7b600020000000000000000025c"
+  },
+  {
+    "poolAddress": "0x49aa6d76f51622e3d2bfba76450c9d8e3ec39e7d",
+    "poolId": "0x49aa6d76f51622e3d2bfba76450c9d8e3ec39e7d00020000000000000000025b",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "237.03",
+      "lifetimeVolume": "53870.63",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x49aa6d76f51622e3d2bfba76450c9d8e3ec39e7d00020000000000000000025b"
+  },
+  {
+    "poolAddress": "0xec92515524d0010cde5a7f9cf6477cc3175efb6f",
+    "poolId": "0xec92515524d0010cde5a7f9cf6477cc3175efb6f000200000000000000000243",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "126.68",
+      "lifetimeVolume": "28791.95",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xec92515524d0010cde5a7f9cf6477cc3175efb6f000200000000000000000243"
+  },
+  {
+    "poolAddress": "0xd2b6bda31e39c0ae071a111ad396ded58e0b6800",
+    "poolId": "0xd2b6bda31e39c0ae071a111ad396ded58e0b6800000200000000000000000247",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "56.83",
+      "lifetimeVolume": "12915.81",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xd2b6bda31e39c0ae071a111ad396ded58e0b6800000200000000000000000247"
+  },
+  {
+    "poolAddress": "0xbc1143aec8ffb0558ffa123a9335f6747cf613ad",
+    "poolId": "0xbc1143aec8ffb0558ffa123a9335f6747cf613ad000200000000000000000253",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "26.72",
+      "lifetimeVolume": "6072.94",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xbc1143aec8ffb0558ffa123a9335f6747cf613ad000200000000000000000253"
+  },
+  {
+    "poolAddress": "0xe10e342e5a4ec28664f1a8eb61948764940d6205",
+    "poolId": "0xe10e342e5a4ec28664f1a8eb61948764940d6205000200000000000000000264",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "14.34",
+      "lifetimeVolume": "3260.10",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xe10e342e5a4ec28664f1a8eb61948764940d6205000200000000000000000264"
+  },
+  {
+    "poolAddress": "0x37ea62b4e12ce2a2985313834bd03c4d404da588",
+    "poolId": "0x37ea62b4e12ce2a2985313834bd03c4d404da588000200000000000000000245",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "8.67",
+      "lifetimeVolume": "1969.92",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x37ea62b4e12ce2a2985313834bd03c4d404da588000200000000000000000245"
+  },
+  {
+    "poolAddress": "0x799190db4448434809f3f97f559fad5f46a22bf8",
+    "poolId": "0x799190db4448434809f3f97f559fad5f46a22bf8000200000000000000000246",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "1.32",
+      "lifetimeVolume": "300.84",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x799190db4448434809f3f97f559fad5f46a22bf8000200000000000000000246"
+  },
+  {
+    "poolAddress": "0xe893041e41c5bb494640a513f21712b77bcebc76",
+    "poolId": "0xe893041e41c5bb494640a513f21712b77bcebc76000200000000000000000257",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "1.07",
+      "lifetimeVolume": "242.67",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.87",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0xe893041e41c5bb494640a513f21712b77bcebc76000200000000000000000257"
+  },
+  {
+    "poolAddress": "0x97bfed7f1b957c7f9412429330082b62f1a75b2d",
+    "poolId": "0x97bfed7f1b957c7f9412429330082b62f1a75b2d000200000000000000000244",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "0.94",
+      "lifetimeVolume": "213.56",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.51",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x97bfed7f1b957c7f9412429330082b62f1a75b2d000200000000000000000244"
+  },
+  {
+    "poolAddress": "0x7ddfad623cabf2f58e29650436b8eeedebba8d47",
+    "poolId": "0x7ddfad623cabf2f58e29650436b8eeedebba8d47000200000000000000000251",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "0.01",
+      "lifetimeVolume": "2.37",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.04",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/base/v2/0x7ddfad623cabf2f58e29650436b8eeedebba8d47000200000000000000000251"
+  }
+]

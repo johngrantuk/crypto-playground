@@ -1,0 +1,54 @@
+[
+  {
+    "poolAddress": "0x060e1f3e931a35ac110b0d8b25fc4ca0bc956c18",
+    "poolId": "0x060e1f3e931a35ac110b0d8b25fc4ca0bc956c18000200000000000000000648",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "0.00",
+      "lifetimeVolume": "1.00",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/arbitrum/v2/0x060e1f3e931a35ac110b0d8b25fc4ca0bc956c18000200000000000000000648"
+  },
+  {
+    "poolAddress": "0x5ee5a7a1e8dfe74bf6e9d55af5a6f7a2af428d67",
+    "poolId": "0x5ee5a7a1e8dfe74bf6e9d55af5a6f7a2af428d67000200000000000000000652",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "0.00",
+      "lifetimeVolume": "2.32",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/arbitrum/v2/0x5ee5a7a1e8dfe74bf6e9d55af5a6f7a2af428d67000200000000000000000652"
+  },
+  {
+    "poolAddress": "0x60502960b01c58f38b27033770551e72451bc280",
+    "poolId": "0x60502960b01c58f38b27033770551e72451bc280000200000000000000000655",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "0.00",
+      "lifetimeVolume": "0.23",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/arbitrum/v2/0x60502960b01c58f38b27033770551e72451bc280000200000000000000000655"
+  },
+  {
+    "poolAddress": "0x6b8c9cbb926fc794c22fd91cb86d9852fb01f391",
+    "poolId": "0x6b8c9cbb926fc794c22fd91cb86d9852fb01f391000200000000000000000645",
+    "protocolVersion": 2,
+    "dynamicData": {
+      "lifetimeSwapFees": "0.00",
+      "lifetimeVolume": "0.23",
+      "totalLiquidityAth": "0",
+      "totalLiquidity": "0.00",
+      "totalLiquidityAthTimestamp": 0
+    },
+    "balancerUrl": "https://balancer.fi/pools/arbitrum/v2/0x6b8c9cbb926fc794c22fd91cb86d9852fb01f391000200000000000000000645"
+  }
+]

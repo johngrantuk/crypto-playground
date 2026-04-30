@@ -1,0 +1,65 @@
+{
+  "inputs": {
+    "poolId": "0x10bdbb4fe8dfd348d44397eedabb737df68bc9a0000200000000000000000248",
+    "lpAddress": "0x91906be1391d2fc7d01a7a6757c69daaefd2c257",
+    "joinTxHash": "0xe93dc163fe50bf7d0c89c0fbe53c448150f3b4849d21abc0f8445faa61c10848",
+    "exitTxHash": "0x2ab83b7c31810138788d11d4be5adacbe7e9e00e78ab9b73f556d1ad0fa87ce3",
+    "joinBlock": "44714002",
+    "exitBlock": "44755378",
+    "includeGasCosts": false,
+    "usdcUsdPrice": 1
+  },
+  "tokenFlows": {
+    "join": {
+      "weth": "2.286",
+      "usdc": "48518"
+    },
+    "exit": {
+      "weth": "20.492630975323983",
+      "usdc": "9819.428165"
+    }
+  },
+  "prices": {
+    "join": {
+      "blockNumber": "44714002",
+      "priceUsdPerWeth": 2337.9803013837554,
+      "spotUsdPerWeth": 2337.9803013837554,
+      "twapUsdPerWeth": 2335.811961284588,
+      "selectedSource": "spot",
+      "deviationBps": 9.283025068400173,
+      "thresholdBps": 150,
+      "twapWindowSeconds": 600
+    },
+    "exit": {
+      "blockNumber": "44755378",
+      "priceUsdPerWeth": 2361.1203977146088,
+      "spotUsdPerWeth": 2361.1203977146088,
+      "twapUsdPerWeth": 2361.8825948951285,
+      "selectedSource": "spot",
+      "deviationBps": 3.2270748011229964,
+      "thresholdBps": 150,
+      "twapWindowSeconds": 600
+    }
+  },
+  "valuation": {
+    "joinValueUsd": 53862.62,
+    "exitValueUsd": 58205,
+    "gasCostJoinUsd": 0,
+    "gasCostExitUsd": 0,
+    "totalGasCostUsd": 0.01
+  },
+  "profitability": {
+    "realizedPnlUsd": 4342.37,
+    "realizedReturnPct": 8.06
+  },
+  "hodlBenchmark": {
+    "hodlValueUsdAtExit": 53915.52,
+    "lpMinusHodlUsd": 4289.48,
+    "lpMinusHodlPct": 7.96
+  },
+  "validations": {
+    "bptRoundTripMatches": true,
+    "bptJoin": "53875720078069178534755",
+    "bptExit": "53875720078069178534755"
+  }
+}

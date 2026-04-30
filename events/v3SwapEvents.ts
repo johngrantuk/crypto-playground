@@ -1,6 +1,12 @@
 // npx ts-node ./events/v3SwapEvents.ts
+import 'dotenv/config';
 import { Address, createPublicClient, http, parseAbiItem } from 'viem';
 import { base } from 'viem/chains';
+
+const BASE_RPC_URL = process.env.BASE_RPC_URL;
+if (!BASE_RPC_URL) {
+    throw new Error('Missing BASE_RPC_URL in environment (.env).');
+}
 
 async function getSwapFeeEventsInChunks(
     contractAddress: Address,
@@ -9,9 +15,7 @@ async function getSwapFeeEventsInChunks(
 ) {
     const publicClient = createPublicClient({
         chain: base,
-        transport: http(
-            'https://base-mainnet.g.alchemy.com/v2/oSZPEiBtkHoHQvKFmyQTvsMCmxnsGdmH'
-        ),
+        transport: http(BASE_RPC_URL),
     });
 
     const eventSignature = parseAbiItem(
