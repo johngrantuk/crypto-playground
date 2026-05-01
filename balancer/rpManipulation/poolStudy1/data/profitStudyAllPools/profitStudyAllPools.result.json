@@ -1,0 +1,1093 @@
+{
+  "generatedAt": "2026-05-01T10:03:23.626Z",
+  "config": {
+    "targetSender": "0x91906be1391d2fc7d01a7a6757c69daaefd2c257",
+    "warningThresholdBps": 200,
+    "poolsSource": "balancer/rpManipulation/initialInvestigation/fetchPoolDynamicDataByNetwork.base.results.json"
+  },
+  "gasNote": "Gas costs are omitted; Base fees are small relative to position size and were not subtracted from PnL.",
+  "includedPools": [
+    {
+      "poolId": "0x10bdbb4fe8dfd348d44397eedabb737df68bc9a0000200000000000000000248",
+      "poolAddress": "0x10bdbb4fe8dfd348d44397eedabb737df68bc9a0",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 53858.78,
+      "capitalOutUsd": 57818.5,
+      "pnlUsd": 3959.72,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776300103,
+        "hodlValueUsdAtExit": 53872.41,
+        "lpMinusHodlUsd": 3946.09,
+        "lpMinusHodlPct": 7.32
+      },
+      "events": [
+        {
+          "eventId": "0xe93dc163fe50bf7d0c89c0fbe53c448150f3b4849d21abc0f8445faa61c10848431",
+          "poolId": "0x10bdbb4fe8dfd348d44397eedabb737df68bc9a0000200000000000000000248",
+          "tx": "0xe93dc163fe50bf7d0c89c0fbe53c448150f3b4849d21abc0f8445faa61c10848",
+          "type": "ADD",
+          "blockNumber": 44714002,
+          "timestamp": 1776217351,
+          "reconstructedUsd": 53858.78,
+          "valueUsdApi": 53837.52,
+          "deviationBps": 3.95
+        },
+        {
+          "eventId": "0x2ab83b7c31810138788d11d4be5adacbe7e9e00e78ab9b73f556d1ad0fa87ce3588",
+          "poolId": "0x10bdbb4fe8dfd348d44397eedabb737df68bc9a0000200000000000000000248",
+          "tx": "0x2ab83b7c31810138788d11d4be5adacbe7e9e00e78ab9b73f556d1ad0fa87ce3",
+          "type": "REMOVE",
+          "blockNumber": 44755378,
+          "timestamp": 1776300103,
+          "reconstructedUsd": 57818.5,
+          "valueUsdApi": 58209.56,
+          "deviationBps": 67.18
+        }
+      ]
+    },
+    {
+      "poolId": "0x0c398c663253ffb78a4d2badbe33bbb8a9e9c671000200000000000000000242",
+      "poolAddress": "0x0c398c663253ffb78a4d2badbe33bbb8a9e9c671",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 52674.42,
+      "capitalOutUsd": 54379.25,
+      "pnlUsd": 1704.83,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776207773,
+        "hodlValueUsdAtExit": 52674.42,
+        "lpMinusHodlUsd": 1704.83,
+        "lpMinusHodlPct": 3.24
+      },
+      "events": [
+        {
+          "eventId": "0x0c755391912d9c0e50f18bea6f392dad32da06bd00f174a5d6460560c3ae4402136",
+          "poolId": "0x0c398c663253ffb78a4d2badbe33bbb8a9e9c671000200000000000000000242",
+          "tx": "0x0c755391912d9c0e50f18bea6f392dad32da06bd00f174a5d6460560c3ae4402",
+          "type": "ADD",
+          "blockNumber": 44701152,
+          "timestamp": 1776191651,
+          "reconstructedUsd": 52674.42,
+          "valueUsdApi": 52569.58,
+          "deviationBps": 19.94
+        },
+        {
+          "eventId": "0x7885bafb2f21d8e9a52384c71c40e4056cf4d1e33de5d20addc6ab7aa6d28cd7301",
+          "poolId": "0x0c398c663253ffb78a4d2badbe33bbb8a9e9c671000200000000000000000242",
+          "tx": "0x7885bafb2f21d8e9a52384c71c40e4056cf4d1e33de5d20addc6ab7aa6d28cd7",
+          "type": "REMOVE",
+          "blockNumber": 44709213,
+          "timestamp": 1776207773,
+          "reconstructedUsd": 54379.25,
+          "valueUsdApi": 53549.28,
+          "deviationBps": 154.99
+        }
+      ]
+    },
+    {
+      "poolId": "0x16ce7de9f88e8860db0419c419c504b6fae6e575000200000000000000000254",
+      "poolAddress": "0x16ce7de9f88e8860db0419c419c504b6fae6e575",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 30003.83,
+      "capitalOutUsd": 29815.04,
+      "pnlUsd": -188.78,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776426237,
+        "hodlValueUsdAtExit": 30003.83,
+        "lpMinusHodlUsd": -188.78,
+        "lpMinusHodlPct": -0.63
+      },
+      "events": [
+        {
+          "eventId": "0x5a85cb3089f0902ca32b866bd34ebfb4fc3b37abcb7ea43f589eadc7ed49d306544",
+          "poolId": "0x16ce7de9f88e8860db0419c419c504b6fae6e575000200000000000000000254",
+          "tx": "0x5a85cb3089f0902ca32b866bd34ebfb4fc3b37abcb7ea43f589eadc7ed49d306",
+          "type": "ADD",
+          "blockNumber": 44809784,
+          "timestamp": 1776408915,
+          "reconstructedUsd": 30003.83,
+          "valueUsdApi": 29619.04,
+          "deviationBps": 129.91
+        },
+        {
+          "eventId": "0x2ff0ed03cb77a5243206a25a51de18b5a02fe4c9e31a9fd03b34874049162c0e1086",
+          "poolId": "0x16ce7de9f88e8860db0419c419c504b6fae6e575000200000000000000000254",
+          "tx": "0x2ff0ed03cb77a5243206a25a51de18b5a02fe4c9e31a9fd03b34874049162c0e",
+          "type": "REMOVE",
+          "blockNumber": 44818445,
+          "timestamp": 1776426237,
+          "reconstructedUsd": 29815.04,
+          "valueUsdApi": 29682.79,
+          "deviationBps": 44.56
+        }
+      ]
+    },
+    {
+      "poolId": "0xb18bc490322f38ec5c9aa967505020600778bd9d000200000000000000000256",
+      "poolAddress": "0xb18bc490322f38ec5c9aa967505020600778bd9d",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 29960.79,
+      "capitalOutUsd": 29952.91,
+      "pnlUsd": -7.88,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776426671,
+        "hodlValueUsdAtExit": 29960.79,
+        "lpMinusHodlUsd": -7.88,
+        "lpMinusHodlPct": -0.03
+      },
+      "events": [
+        {
+          "eventId": "0x76575b33e2fdf073a4cc2c1e81d3095d2bf7402a4fd24a5450610e170fefbb0c628",
+          "poolId": "0xb18bc490322f38ec5c9aa967505020600778bd9d000200000000000000000256",
+          "tx": "0x76575b33e2fdf073a4cc2c1e81d3095d2bf7402a4fd24a5450610e170fefbb0c",
+          "type": "ADD",
+          "blockNumber": 44811687,
+          "timestamp": 1776412721,
+          "reconstructedUsd": 29960.79,
+          "valueUsdApi": 29758.74,
+          "deviationBps": 67.9
+        },
+        {
+          "eventId": "0x06bf682593c4d9b74ff5a83c45f2eff46e322bdae0f812112efe71fb0f9ba0db212",
+          "poolId": "0xb18bc490322f38ec5c9aa967505020600778bd9d000200000000000000000256",
+          "tx": "0x06bf682593c4d9b74ff5a83c45f2eff46e322bdae0f812112efe71fb0f9ba0db",
+          "type": "REMOVE",
+          "blockNumber": 44818662,
+          "timestamp": 1776426671,
+          "reconstructedUsd": 29952.91,
+          "valueUsdApi": 29748.13,
+          "deviationBps": 68.84
+        }
+      ]
+    },
+    {
+      "poolId": "0xd8ddffaaea64d4adffa61ab16634109b8e64d1f4000200000000000000000260",
+      "poolAddress": "0xd8ddffaaea64d4adffa61ab16634109b8e64d1f4",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 28430.72,
+      "capitalOutUsd": 28298.29,
+      "pnlUsd": -132.43,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776451231,
+        "hodlValueUsdAtExit": 28430.72,
+        "lpMinusHodlUsd": -132.43,
+        "lpMinusHodlPct": -0.47
+      },
+      "events": [
+        {
+          "eventId": "0x9269dcd03997376685e3bfbf4bb643f9beeeada6ecd372a4aeb880d82be71f46348",
+          "poolId": "0xd8ddffaaea64d4adffa61ab16634109b8e64d1f4000200000000000000000260",
+          "tx": "0x9269dcd03997376685e3bfbf4bb643f9beeeada6ecd372a4aeb880d82be71f46",
+          "type": "ADD",
+          "blockNumber": 44827686,
+          "timestamp": 1776444719,
+          "reconstructedUsd": 28430.72,
+          "valueUsdApi": 28651.31,
+          "deviationBps": 76.99
+        },
+        {
+          "eventId": "0x6dd00d1a878ff188a75e0edecace50aefa864f990d6a41bb9c4601b3327ae02a1062",
+          "poolId": "0xd8ddffaaea64d4adffa61ab16634109b8e64d1f4000200000000000000000260",
+          "tx": "0x6dd00d1a878ff188a75e0edecace50aefa864f990d6a41bb9c4601b3327ae02a",
+          "type": "REMOVE",
+          "blockNumber": 44830942,
+          "timestamp": 1776451231,
+          "reconstructedUsd": 28298.29,
+          "valueUsdApi": 28813.14,
+          "deviationBps": 178.69
+        }
+      ]
+    },
+    {
+      "poolId": "0xd835f9580fdc16eef56769e2976242c0fe00edad000200000000000000000261",
+      "poolAddress": "0xd835f9580fdc16eef56769e2976242c0fe00edad",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 29566.47,
+      "capitalOutUsd": 29955.83,
+      "pnlUsd": 389.36,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776451307,
+        "hodlValueUsdAtExit": 29566.47,
+        "lpMinusHodlUsd": 389.36,
+        "lpMinusHodlPct": 1.32
+      },
+      "events": [
+        {
+          "eventId": "0x1c2e7069a4a15c3b98c70ea0b89a861917203ecf749b2cfcdddbf74ebdb31cf5529",
+          "poolId": "0xd835f9580fdc16eef56769e2976242c0fe00edad000200000000000000000261",
+          "tx": "0x1c2e7069a4a15c3b98c70ea0b89a861917203ecf749b2cfcdddbf74ebdb31cf5",
+          "type": "ADD",
+          "blockNumber": 44827696,
+          "timestamp": 1776444739,
+          "reconstructedUsd": 29566.47,
+          "valueUsdApi": 29985.64,
+          "deviationBps": 139.79
+        },
+        {
+          "eventId": "0x5bcb4de95ec251a51f6117645af795283e6457bfd887dcaaaf9eddafdff99d24252",
+          "poolId": "0xd835f9580fdc16eef56769e2976242c0fe00edad000200000000000000000261",
+          "tx": "0x5bcb4de95ec251a51f6117645af795283e6457bfd887dcaaaf9eddafdff99d24",
+          "type": "REMOVE",
+          "blockNumber": 44830980,
+          "timestamp": 1776451307,
+          "reconstructedUsd": 29955.83,
+          "valueUsdApi": 30063.74,
+          "deviationBps": 35.89
+        }
+      ]
+    },
+    {
+      "poolId": "0x11ffbd325f4c34fe3399101fd3bcba910928dcc7000200000000000000000259",
+      "poolAddress": "0x11ffbd325f4c34fe3399101fd3bcba910928dcc7",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 29167.65,
+      "capitalOutUsd": 28852.08,
+      "pnlUsd": -315.57,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776432217,
+        "hodlValueUsdAtExit": 29167.65,
+        "lpMinusHodlUsd": -315.57,
+        "lpMinusHodlPct": -1.08
+      },
+      "events": [
+        {
+          "eventId": "0x1483b0bae8ae7a3c0855fc2d39b8a49efe32b65da282de842699119f6e2b35e5196",
+          "poolId": "0x11ffbd325f4c34fe3399101fd3bcba910928dcc7000200000000000000000259",
+          "tx": "0x1483b0bae8ae7a3c0855fc2d39b8a49efe32b65da282de842699119f6e2b35e5",
+          "type": "ADD",
+          "blockNumber": 44819608,
+          "timestamp": 1776428563,
+          "reconstructedUsd": 29167.65,
+          "valueUsdApi": 29020.73,
+          "deviationBps": 50.63
+        },
+        {
+          "eventId": "0x15a355b30bb7723376df07515b3483f4d0fcfce4e34610d8f498a25edfcc9b95503",
+          "poolId": "0x11ffbd325f4c34fe3399101fd3bcba910928dcc7000200000000000000000259",
+          "tx": "0x15a355b30bb7723376df07515b3483f4d0fcfce4e34610d8f498a25edfcc9b95",
+          "type": "REMOVE",
+          "blockNumber": 44821435,
+          "timestamp": 1776432217,
+          "reconstructedUsd": 28852.08,
+          "valueUsdApi": 28839.55,
+          "deviationBps": 4.35
+        }
+      ]
+    },
+    {
+      "poolId": "0x8a798d8f948ad572e5993d83fbcec9e259a58f1e00020000000000000000025a",
+      "poolAddress": "0x8a798d8f948ad572e5993d83fbcec9e259a58f1e",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 29719.57,
+      "capitalOutUsd": 29392.56,
+      "pnlUsd": -327.02,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776435991,
+        "hodlValueUsdAtExit": 29719.57,
+        "lpMinusHodlUsd": -327.02,
+        "lpMinusHodlPct": -1.1
+      },
+      "events": [
+        {
+          "eventId": "0xa5c762a6904051f8b1e8d3b8c1dab2bc7e5a581cc2a41a10ff83fd270d8e93ab1103",
+          "poolId": "0x8a798d8f948ad572e5993d83fbcec9e259a58f1e00020000000000000000025a",
+          "tx": "0xa5c762a6904051f8b1e8d3b8c1dab2bc7e5a581cc2a41a10ff83fd270d8e93ab",
+          "type": "ADD",
+          "blockNumber": 44821566,
+          "timestamp": 1776432479,
+          "reconstructedUsd": 29719.57,
+          "valueUsdApi": 29640.92,
+          "deviationBps": 26.53
+        },
+        {
+          "eventId": "0x0b4fb2282c40ce9cb87b00ff9060149eb7046b2923f7bfa0e421be251b7c32a4382",
+          "poolId": "0x8a798d8f948ad572e5993d83fbcec9e259a58f1e00020000000000000000025a",
+          "tx": "0x0b4fb2282c40ce9cb87b00ff9060149eb7046b2923f7bfa0e421be251b7c32a4",
+          "type": "REMOVE",
+          "blockNumber": 44823322,
+          "timestamp": 1776435991,
+          "reconstructedUsd": 29392.56,
+          "valueUsdApi": 29884.15,
+          "deviationBps": 164.5
+        }
+      ]
+    },
+    {
+      "poolId": "0x3873dc021064f95e829e6a3b6e6d4fae180cda7f000200000000000000000263",
+      "poolAddress": "0x3873dc021064f95e829e6a3b6e6d4fae180cda7f",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 25961.3,
+      "capitalOutUsd": 25796.8,
+      "pnlUsd": -164.5,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776461125,
+        "hodlValueUsdAtExit": 25961.3,
+        "lpMinusHodlUsd": -164.5,
+        "lpMinusHodlPct": -0.63
+      },
+      "events": [
+        {
+          "eventId": "0x7ec6c0def41c4dadf7efe1a85b3e8e02ab751f38180a5b8f0ff167f6b6400ef1570",
+          "poolId": "0x3873dc021064f95e829e6a3b6e6d4fae180cda7f000200000000000000000263",
+          "tx": "0x7ec6c0def41c4dadf7efe1a85b3e8e02ab751f38180a5b8f0ff167f6b6400ef1",
+          "type": "ADD",
+          "blockNumber": 44831125,
+          "timestamp": 1776451597,
+          "reconstructedUsd": 25961.3,
+          "valueUsdApi": 26071.5,
+          "deviationBps": 42.27
+        },
+        {
+          "eventId": "0x2be111815979aff6b7261b250c245cfd7d80f49053b04ba94bbfb3f53086778e919",
+          "poolId": "0x3873dc021064f95e829e6a3b6e6d4fae180cda7f000200000000000000000263",
+          "tx": "0x2be111815979aff6b7261b250c245cfd7d80f49053b04ba94bbfb3f53086778e",
+          "type": "REMOVE",
+          "blockNumber": 44835889,
+          "timestamp": 1776461125,
+          "reconstructedUsd": 25796.8,
+          "valueUsdApi": 26027.29,
+          "deviationBps": 88.56
+        }
+      ]
+    },
+    {
+      "poolId": "0x433be8f933061021e05cc4aefbfbb58280af3ab900020000000000000000025e",
+      "poolAddress": "0x433be8f933061021e05cc4aefbfbb58280af3ab9",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 30786.68,
+      "capitalOutUsd": 30604.15,
+      "pnlUsd": -182.53,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776444483,
+        "hodlValueUsdAtExit": 30786.68,
+        "lpMinusHodlUsd": -182.53,
+        "lpMinusHodlPct": -0.59
+      },
+      "events": [
+        {
+          "eventId": "0xd67c754ab46e498c969b544a40852258230f6018e9d3ac45d325229f76dfe409341",
+          "poolId": "0x433be8f933061021e05cc4aefbfbb58280af3ab900020000000000000000025e",
+          "tx": "0xd67c754ab46e498c969b544a40852258230f6018e9d3ac45d325229f76dfe409",
+          "type": "ADD",
+          "blockNumber": 44825784,
+          "timestamp": 1776440915,
+          "reconstructedUsd": 30786.68,
+          "valueUsdApi": 30889.42,
+          "deviationBps": 33.26
+        },
+        {
+          "eventId": "0x3a3944b1e61719a63efe1642382a194a2e72363f448243873fe01ea243314829712",
+          "poolId": "0x433be8f933061021e05cc4aefbfbb58280af3ab900020000000000000000025e",
+          "tx": "0x3a3944b1e61719a63efe1642382a194a2e72363f448243873fe01ea243314829",
+          "type": "REMOVE",
+          "blockNumber": 44827568,
+          "timestamp": 1776444483,
+          "reconstructedUsd": 30604.15,
+          "valueUsdApi": 30823.58,
+          "deviationBps": 71.19
+        }
+      ]
+    },
+    {
+      "poolId": "0x1beb3dd9361dd7f57dcfe80eeacc2af3bd973fc2000200000000000000000298",
+      "poolAddress": "0x1beb3dd9361dd7f57dcfe80eeacc2af3bd973fc2",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 32930.09,
+      "capitalOutUsd": 33.04,
+      "pnlUsd": -32897.05,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776569239,
+        "hodlValueUsdAtExit": 32930.09,
+        "lpMinusHodlUsd": -32897.05,
+        "lpMinusHodlPct": -99.9
+      },
+      "events": [
+        {
+          "eventId": "0x1a68348cb231d43c3b842ff0bf076e3a5532bc2455043c32a017c68ce0991c45425",
+          "poolId": "0x1beb3dd9361dd7f57dcfe80eeacc2af3bd973fc2000200000000000000000298",
+          "tx": "0x1a68348cb231d43c3b842ff0bf076e3a5532bc2455043c32a017c68ce0991c45",
+          "type": "ADD",
+          "blockNumber": 44886752,
+          "timestamp": 1776562851,
+          "reconstructedUsd": 32930.09,
+          "valueUsdApi": 33086.57,
+          "deviationBps": 47.29
+        },
+        {
+          "eventId": "0x673300ee5a011960914c7a22c0b2b29ffdd98c795c4f4ed1b8e91779f6c54f2a509",
+          "poolId": "0x1beb3dd9361dd7f57dcfe80eeacc2af3bd973fc2000200000000000000000298",
+          "tx": "0x673300ee5a011960914c7a22c0b2b29ffdd98c795c4f4ed1b8e91779f6c54f2a",
+          "type": "REMOVE",
+          "blockNumber": 44889946,
+          "timestamp": 1776569239,
+          "reconstructedUsd": 33.04,
+          "valueUsdApi": 33.12,
+          "deviationBps": 25.25
+        }
+      ]
+    },
+    {
+      "poolId": "0x1d90f4d2d5fcebfe5afc4f2ce4ceb009e6a9181600020000000000000000025f",
+      "poolAddress": "0x1d90f4d2d5fcebfe5afc4f2ce4ceb009e6a91816",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 28983.83,
+      "capitalOutUsd": 28665.72,
+      "pnlUsd": -318.11,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776444357,
+        "hodlValueUsdAtExit": 28983.83,
+        "lpMinusHodlUsd": -318.11,
+        "lpMinusHodlPct": -1.1
+      },
+      "events": [
+        {
+          "eventId": "0x9c209c0818ff540fca36c4e4680e0ae8fb9b39ff4c735d30d138fcc83c26a758207",
+          "poolId": "0x1d90f4d2d5fcebfe5afc4f2ce4ceb009e6a9181600020000000000000000025f",
+          "tx": "0x9c209c0818ff540fca36c4e4680e0ae8fb9b39ff4c735d30d138fcc83c26a758",
+          "type": "ADD",
+          "blockNumber": 44825793,
+          "timestamp": 1776440933,
+          "reconstructedUsd": 28983.83,
+          "valueUsdApi": 29181.65,
+          "deviationBps": 67.79
+        },
+        {
+          "eventId": "0x3626085fa7f96acde2610a616c98f40aac19d8956543cdf2703db8b344172995297",
+          "poolId": "0x1d90f4d2d5fcebfe5afc4f2ce4ceb009e6a9181600020000000000000000025f",
+          "tx": "0x3626085fa7f96acde2610a616c98f40aac19d8956543cdf2703db8b344172995",
+          "type": "REMOVE",
+          "blockNumber": 44827505,
+          "timestamp": 1776444357,
+          "reconstructedUsd": 28665.72,
+          "valueUsdApi": 29079.28,
+          "deviationBps": 142.22
+        }
+      ]
+    },
+    {
+      "poolId": "0x4da5b4f7f58c5c4744af7f6f43ace7a34dfe7bac00020000000000000000025d",
+      "poolAddress": "0x4da5b4f7f58c5c4744af7f6f43ace7a34dfe7bac",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 32930.97,
+      "capitalOutUsd": 33398.25,
+      "pnlUsd": 467.28,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776440289,
+        "hodlValueUsdAtExit": 32930.97,
+        "lpMinusHodlUsd": 467.28,
+        "lpMinusHodlPct": 1.42
+      },
+      "events": [
+        {
+          "eventId": "0x7600c74c9ec7bf01e31e369779574e178fb4befe6830fe903d2809694b6a6a98339",
+          "poolId": "0x4da5b4f7f58c5c4744af7f6f43ace7a34dfe7bac00020000000000000000025d",
+          "tx": "0x7600c74c9ec7bf01e31e369779574e178fb4befe6830fe903d2809694b6a6a98",
+          "type": "ADD",
+          "blockNumber": 44823681,
+          "timestamp": 1776436709,
+          "reconstructedUsd": 32930.97,
+          "valueUsdApi": 33344.32,
+          "deviationBps": 123.96
+        },
+        {
+          "eventId": "0x3e23cd49f918000d973e36f52d71f2b245a918fea7ccabe5850d47ab57cd504a451",
+          "poolId": "0x4da5b4f7f58c5c4744af7f6f43ace7a34dfe7bac00020000000000000000025d",
+          "tx": "0x3e23cd49f918000d973e36f52d71f2b245a918fea7ccabe5850d47ab57cd504a",
+          "type": "REMOVE",
+          "blockNumber": 44825471,
+          "timestamp": 1776440289,
+          "reconstructedUsd": 33398.25,
+          "valueUsdApi": 33591.9,
+          "deviationBps": 57.65
+        }
+      ]
+    },
+    {
+      "poolId": "0xf58aa4e06e935eb217de308acd89b23719b4550f000200000000000000000258",
+      "poolAddress": "0xf58aa4e06e935eb217de308acd89b23719b4550f",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 31121.25,
+      "capitalOutUsd": 30785.28,
+      "pnlUsd": -335.96,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776431951,
+        "hodlValueUsdAtExit": 31121.25,
+        "lpMinusHodlUsd": -335.96,
+        "lpMinusHodlPct": -1.08
+      },
+      "events": [
+        {
+          "eventId": "0x1153db7de21194348bd0fce4870a870c7356ec4606ebf118b6009bd7d910b470132",
+          "poolId": "0xf58aa4e06e935eb217de308acd89b23719b4550f000200000000000000000258",
+          "tx": "0x1153db7de21194348bd0fce4870a870c7356ec4606ebf118b6009bd7d910b470",
+          "type": "ADD",
+          "blockNumber": 44819493,
+          "timestamp": 1776428333,
+          "reconstructedUsd": 31121.25,
+          "valueUsdApi": 31022.36,
+          "deviationBps": 31.88
+        },
+        {
+          "eventId": "0x46900e6efd549ad180ce5e082cbb64444e6f2068622ad523523d2b57e70325fa223",
+          "poolId": "0xf58aa4e06e935eb217de308acd89b23719b4550f000200000000000000000258",
+          "tx": "0x46900e6efd549ad180ce5e082cbb64444e6f2068622ad523523d2b57e70325fa",
+          "type": "REMOVE",
+          "blockNumber": 44821302,
+          "timestamp": 1776431951,
+          "reconstructedUsd": 30785.28,
+          "valueUsdApi": 30705.84,
+          "deviationBps": 25.87
+        }
+      ]
+    },
+    {
+      "poolId": "0xfcbb01014569c3fe53ea571e589f38c3ba480b0a000200000000000000000299",
+      "poolAddress": "0xfcbb01014569c3fe53ea571e589f38c3ba480b0a",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 33773.91,
+      "capitalOutUsd": 337.54,
+      "pnlUsd": -33436.36,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776569315,
+        "hodlValueUsdAtExit": 33773.91,
+        "lpMinusHodlUsd": -33436.36,
+        "lpMinusHodlPct": -99
+      },
+      "events": [
+        {
+          "eventId": "0x34dcc79ec27550e58070aac66e504aaff0f20455b96788787f804a8d0ab5bde6543",
+          "poolId": "0xfcbb01014569c3fe53ea571e589f38c3ba480b0a000200000000000000000299",
+          "tx": "0x34dcc79ec27550e58070aac66e504aaff0f20455b96788787f804a8d0ab5bde6",
+          "type": "ADD",
+          "blockNumber": 44886759,
+          "timestamp": 1776562865,
+          "reconstructedUsd": 33773.91,
+          "valueUsdApi": 33820.86,
+          "deviationBps": 13.88
+        },
+        {
+          "eventId": "0x8c74b1e6b7de6c2cd2fb5ec319085ecec43ad4c05552484192e4032929401371571",
+          "poolId": "0xfcbb01014569c3fe53ea571e589f38c3ba480b0a000200000000000000000299",
+          "tx": "0x8c74b1e6b7de6c2cd2fb5ec319085ecec43ad4c05552484192e4032929401371",
+          "type": "REMOVE",
+          "blockNumber": 44889984,
+          "timestamp": 1776569315,
+          "reconstructedUsd": 337.54,
+          "valueUsdApi": 338.5,
+          "deviationBps": 28.19
+        }
+      ]
+    },
+    {
+      "poolId": "0x472a57f8a911ea5b7f9c06911415eacb3045e2ae000200000000000000000252",
+      "poolAddress": "0x472a57f8a911ea5b7f9c06911415eacb3045e2ae",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 59087.46,
+      "capitalOutUsd": 59317.77,
+      "pnlUsd": 230.31,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776308301,
+        "hodlValueUsdAtExit": 59087.46,
+        "lpMinusHodlUsd": 230.31,
+        "lpMinusHodlPct": 0.39
+      },
+      "events": [
+        {
+          "eventId": "0x01cbca6f4a5bc16d5069887b005da368b3bd016c0c2d362bb54c18fe4a88b476392",
+          "poolId": "0x472a57f8a911ea5b7f9c06911415eacb3045e2ae000200000000000000000252",
+          "tx": "0x01cbca6f4a5bc16d5069887b005da368b3bd016c0c2d362bb54c18fe4a88b476",
+          "type": "ADD",
+          "blockNumber": 44756643,
+          "timestamp": 1776302633,
+          "reconstructedUsd": 59087.46,
+          "valueUsdApi": 59453.81,
+          "deviationBps": 61.62
+        },
+        {
+          "eventId": "0xa681086761c028fafb706dda7843ab552837ab6bef215a5cbbc6f37cbeef1cf7448",
+          "poolId": "0x472a57f8a911ea5b7f9c06911415eacb3045e2ae000200000000000000000252",
+          "tx": "0xa681086761c028fafb706dda7843ab552837ab6bef215a5cbbc6f37cbeef1cf7",
+          "type": "REMOVE",
+          "blockNumber": 44759477,
+          "timestamp": 1776308301,
+          "reconstructedUsd": 59317.77,
+          "valueUsdApi": 59438.45,
+          "deviationBps": 20.3
+        }
+      ]
+    },
+    {
+      "poolId": "0xf62e7001b57ac9f47f2d22cb6184f48506a2a7b600020000000000000000025c",
+      "poolAddress": "0xf62e7001b57ac9f47f2d22cb6184f48506a2a7b6",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 27410.73,
+      "capitalOutUsd": 27952.48,
+      "pnlUsd": 541.75,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776440437,
+        "hodlValueUsdAtExit": 27410.73,
+        "lpMinusHodlUsd": 541.75,
+        "lpMinusHodlPct": 1.98
+      },
+      "events": [
+        {
+          "eventId": "0x5dfb3fd784840b65521717c98a443ce679486d18113a30bf7bfc4f721d31cc80515",
+          "poolId": "0xf62e7001b57ac9f47f2d22cb6184f48506a2a7b600020000000000000000025c",
+          "tx": "0x5dfb3fd784840b65521717c98a443ce679486d18113a30bf7bfc4f721d31cc80",
+          "type": "ADD",
+          "blockNumber": 44823665,
+          "timestamp": 1776436677,
+          "reconstructedUsd": 27410.73,
+          "valueUsdApi": 27916.94,
+          "deviationBps": 181.33
+        },
+        {
+          "eventId": "0xdc7ebc117c142789ebcd0607f65c8a5520cb908f7bdb0520750a780a35a8afed553",
+          "poolId": "0xf62e7001b57ac9f47f2d22cb6184f48506a2a7b600020000000000000000025c",
+          "tx": "0xdc7ebc117c142789ebcd0607f65c8a5520cb908f7bdb0520750a780a35a8afed",
+          "type": "REMOVE",
+          "blockNumber": 44825545,
+          "timestamp": 1776440437,
+          "reconstructedUsd": 27952.48,
+          "valueUsdApi": 28047.9,
+          "deviationBps": 34.02
+        }
+      ]
+    },
+    {
+      "poolId": "0x49aa6d76f51622e3d2bfba76450c9d8e3ec39e7d00020000000000000000025b",
+      "poolAddress": "0x49aa6d76f51622e3d2bfba76450c9d8e3ec39e7d",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 30362.92,
+      "capitalOutUsd": 29974.85,
+      "pnlUsd": -388.07,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776436397,
+        "hodlValueUsdAtExit": 30362.92,
+        "lpMinusHodlUsd": -388.07,
+        "lpMinusHodlPct": -1.28
+      },
+      "events": [
+        {
+          "eventId": "0x56c543040efb7fda72161bace3fcdca8e56cf1cea9ea9572299da124fe2e16c01091",
+          "poolId": "0x49aa6d76f51622e3d2bfba76450c9d8e3ec39e7d00020000000000000000025b",
+          "tx": "0x56c543040efb7fda72161bace3fcdca8e56cf1cea9ea9572299da124fe2e16c0",
+          "type": "ADD",
+          "blockNumber": 44821606,
+          "timestamp": 1776432559,
+          "reconstructedUsd": 30362.92,
+          "valueUsdApi": 30350,
+          "deviationBps": 4.26
+        },
+        {
+          "eventId": "0xf3f04ee5dbd618a453ee224f8a65466ca04ded5b216aff1adbc71a9db09bbf7e819",
+          "poolId": "0x49aa6d76f51622e3d2bfba76450c9d8e3ec39e7d00020000000000000000025b",
+          "tx": "0xf3f04ee5dbd618a453ee224f8a65466ca04ded5b216aff1adbc71a9db09bbf7e",
+          "type": "REMOVE",
+          "blockNumber": 44823525,
+          "timestamp": 1776436397,
+          "reconstructedUsd": 29974.85,
+          "valueUsdApi": 30382.58,
+          "deviationBps": 134.2
+        }
+      ]
+    },
+    {
+      "poolId": "0xec92515524d0010cde5a7f9cf6477cc3175efb6f000200000000000000000243",
+      "poolAddress": "0xec92515524d0010cde5a7f9cf6477cc3175efb6f",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 54371.84,
+      "capitalOutUsd": 53942.52,
+      "pnlUsd": -429.32,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776209089,
+        "hodlValueUsdAtExit": 54371.84,
+        "lpMinusHodlUsd": -429.32,
+        "lpMinusHodlPct": -0.79
+      },
+      "events": [
+        {
+          "eventId": "0xb419406e9ccb49a617971b0e79672a4821d137bb49304f08c309f14d0d2b2569258",
+          "poolId": "0xec92515524d0010cde5a7f9cf6477cc3175efb6f000200000000000000000243",
+          "tx": "0xb419406e9ccb49a617971b0e79672a4821d137bb49304f08c309f14d0d2b2569",
+          "type": "ADD",
+          "blockNumber": 44709239,
+          "timestamp": 1776207825,
+          "reconstructedUsd": 54371.84,
+          "valueUsdApi": 53541.96,
+          "deviationBps": 155
+        },
+        {
+          "eventId": "0xea80d0d67c784eb3a3a601eb2b545ec8e3320794775c589788277f2e12b43930308",
+          "poolId": "0xec92515524d0010cde5a7f9cf6477cc3175efb6f000200000000000000000243",
+          "tx": "0xea80d0d67c784eb3a3a601eb2b545ec8e3320794775c589788277f2e12b43930",
+          "type": "REMOVE",
+          "blockNumber": 44709871,
+          "timestamp": 1776209089,
+          "reconstructedUsd": 53942.52,
+          "valueUsdApi": 53632.63,
+          "deviationBps": 57.78
+        }
+      ]
+    },
+    {
+      "poolId": "0xd2b6bda31e39c0ae071a111ad396ded58e0b6800000200000000000000000247",
+      "poolAddress": "0xd2b6bda31e39c0ae071a111ad396ded58e0b6800",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 53753.05,
+      "capitalOutUsd": 53805.49,
+      "pnlUsd": 52.43,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776217167,
+        "hodlValueUsdAtExit": 53753.05,
+        "lpMinusHodlUsd": 52.43,
+        "lpMinusHodlPct": 0.1
+      },
+      "events": [
+        {
+          "eventId": "0x8dc340f4229e8711b4ce706dbc5d0f8ef9647b95eb7fc9e91accfff18447d2781125",
+          "poolId": "0xd2b6bda31e39c0ae071a111ad396ded58e0b6800000200000000000000000247",
+          "tx": "0x8dc340f4229e8711b4ce706dbc5d0f8ef9647b95eb7fc9e91accfff18447d278",
+          "type": "ADD",
+          "blockNumber": 44713618,
+          "timestamp": 1776216583,
+          "reconstructedUsd": 53753.05,
+          "valueUsdApi": 53709.24,
+          "deviationBps": 8.16
+        },
+        {
+          "eventId": "0x0ba38ed5a2b7d1f912fcc88402ac72b48443f8e939b7a1a7725a79bf5a355ea5292",
+          "poolId": "0xd2b6bda31e39c0ae071a111ad396ded58e0b6800000200000000000000000247",
+          "tx": "0x0ba38ed5a2b7d1f912fcc88402ac72b48443f8e939b7a1a7725a79bf5a355ea5",
+          "type": "REMOVE",
+          "blockNumber": 44713910,
+          "timestamp": 1776217167,
+          "reconstructedUsd": 53805.49,
+          "valueUsdApi": 53784.25,
+          "deviationBps": 3.95
+        }
+      ]
+    },
+    {
+      "poolId": "0xbc1143aec8ffb0558ffa123a9335f6747cf613ad000200000000000000000253",
+      "poolAddress": "0xbc1143aec8ffb0558ffa123a9335f6747cf613ad",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 4381.56,
+      "capitalOutUsd": 4415.11,
+      "pnlUsd": 33.55,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776408255,
+        "hodlValueUsdAtExit": 4381.56,
+        "lpMinusHodlUsd": 33.55,
+        "lpMinusHodlPct": 0.77
+      },
+      "events": [
+        {
+          "eventId": "0xe77f637102709fcd6628d3d8fbb737078d08bbcea1713fd625ccdbd97e12a96d365",
+          "poolId": "0xbc1143aec8ffb0558ffa123a9335f6747cf613ad000200000000000000000253",
+          "tx": "0xe77f637102709fcd6628d3d8fbb737078d08bbcea1713fd625ccdbd97e12a96d",
+          "type": "ADD",
+          "blockNumber": 44809244,
+          "timestamp": 1776407835,
+          "reconstructedUsd": 4381.56,
+          "valueUsdApi": 4320.56,
+          "deviationBps": 141.19
+        },
+        {
+          "eventId": "0x15f3fcdd50614f41a5250931d56825cc0a917b6bc28b9087359b351392db9e5c247",
+          "poolId": "0xbc1143aec8ffb0558ffa123a9335f6747cf613ad000200000000000000000253",
+          "tx": "0x15f3fcdd50614f41a5250931d56825cc0a917b6bc28b9087359b351392db9e5c",
+          "type": "REMOVE",
+          "blockNumber": 44809454,
+          "timestamp": 1776408255,
+          "reconstructedUsd": 4415.11,
+          "valueUsdApi": 4329.55,
+          "deviationBps": 197.63
+        }
+      ]
+    },
+    {
+      "poolId": "0xe10e342e5a4ec28664f1a8eb61948764940d6205000200000000000000000264",
+      "poolAddress": "0xe10e342e5a4ec28664f1a8eb61948764940d6205",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 25961.3,
+      "capitalOutUsd": 25905.23,
+      "pnlUsd": -56.08,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776461673,
+        "hodlValueUsdAtExit": 25961.3,
+        "lpMinusHodlUsd": -56.08,
+        "lpMinusHodlPct": -0.22
+      },
+      "events": [
+        {
+          "eventId": "0xe5c67b6b81039a9eb30bb24e11300ae6952964dc514da31b52d9791cdb80b156576",
+          "poolId": "0xe10e342e5a4ec28664f1a8eb61948764940d6205000200000000000000000264",
+          "tx": "0xe5c67b6b81039a9eb30bb24e11300ae6952964dc514da31b52d9791cdb80b156",
+          "type": "ADD",
+          "blockNumber": 44836116,
+          "timestamp": 1776461579,
+          "reconstructedUsd": 25961.3,
+          "valueUsdApi": 26054.44,
+          "deviationBps": 35.75
+        },
+        {
+          "eventId": "0xca1d6afe4071ca465089b8dd67b47e85d4c60a115fd61cc29ba174e5f3cf4a38618",
+          "poolId": "0xe10e342e5a4ec28664f1a8eb61948764940d6205000200000000000000000264",
+          "tx": "0xca1d6afe4071ca465089b8dd67b47e85d4c60a115fd61cc29ba174e5f3cf4a38",
+          "type": "REMOVE",
+          "blockNumber": 44836163,
+          "timestamp": 1776461673,
+          "reconstructedUsd": 25905.23,
+          "valueUsdApi": 26050.04,
+          "deviationBps": 55.59
+        }
+      ]
+    },
+    {
+      "poolId": "0x37ea62b4e12ce2a2985313834bd03c4d404da588000200000000000000000245",
+      "poolAddress": "0x37ea62b4e12ce2a2985313834bd03c4d404da588",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 4536.3,
+      "capitalOutUsd": 4543.24,
+      "pnlUsd": 6.94,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776216077,
+        "hodlValueUsdAtExit": 4536.3,
+        "lpMinusHodlUsd": 6.94,
+        "lpMinusHodlPct": 0.15
+      },
+      "events": [
+        {
+          "eventId": "0x89c7afc63e50154b66bd5952dcc968fb812f768f7262559724efc5aa759ebd48569",
+          "poolId": "0x37ea62b4e12ce2a2985313834bd03c4d404da588000200000000000000000245",
+          "tx": "0x89c7afc63e50154b66bd5952dcc968fb812f768f7262559724efc5aa759ebd48",
+          "type": "ADD",
+          "blockNumber": 44712932,
+          "timestamp": 1776215211,
+          "reconstructedUsd": 4536.3,
+          "valueUsdApi": 4531.19,
+          "deviationBps": 11.29
+        },
+        {
+          "eventId": "0x1f810f39ea0595cc334546c1950cbd287f0c0c205c92a65012d97dc49173f241449",
+          "poolId": "0x37ea62b4e12ce2a2985313834bd03c4d404da588000200000000000000000245",
+          "tx": "0x1f810f39ea0595cc334546c1950cbd287f0c0c205c92a65012d97dc49173f241",
+          "type": "REMOVE",
+          "blockNumber": 44713365,
+          "timestamp": 1776216077,
+          "reconstructedUsd": 4543.24,
+          "valueUsdApi": 4534.66,
+          "deviationBps": 18.93
+        }
+      ]
+    },
+    {
+      "poolId": "0x799190db4448434809f3f97f559fad5f46a22bf8000200000000000000000246",
+      "poolAddress": "0x799190db4448434809f3f97f559fad5f46a22bf8",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 9072.6,
+      "capitalOutUsd": 9071.26,
+      "pnlUsd": -1.34,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776216501,
+        "hodlValueUsdAtExit": 9072.6,
+        "lpMinusHodlUsd": -1.34,
+        "lpMinusHodlPct": -0.01
+      },
+      "events": [
+        {
+          "eventId": "0xef4f9cc6610c2017ddeb8ca247f1c6f1f596c3095591b03149a3314e2eae240b455",
+          "poolId": "0x799190db4448434809f3f97f559fad5f46a22bf8000200000000000000000246",
+          "tx": "0xef4f9cc6610c2017ddeb8ca247f1c6f1f596c3095591b03149a3314e2eae240b",
+          "type": "ADD",
+          "blockNumber": 44713533,
+          "timestamp": 1776216413,
+          "reconstructedUsd": 9072.6,
+          "valueUsdApi": 9062.37,
+          "deviationBps": 11.29
+        },
+        {
+          "eventId": "0x80afd1025f0f9599eea287da2920b767ca6221842d9e64359c92d3cf254f9c1c734",
+          "poolId": "0x799190db4448434809f3f97f559fad5f46a22bf8000200000000000000000246",
+          "tx": "0x80afd1025f0f9599eea287da2920b767ca6221842d9e64359c92d3cf254f9c1c",
+          "type": "REMOVE",
+          "blockNumber": 44713577,
+          "timestamp": 1776216501,
+          "reconstructedUsd": 9071.26,
+          "valueUsdApi": 9061.56,
+          "deviationBps": 10.7
+        }
+      ]
+    },
+    {
+      "poolId": "0xe893041e41c5bb494640a513f21712b77bcebc76000200000000000000000257",
+      "poolAddress": "0xe893041e41c5bb494640a513f21712b77bcebc76",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 538.16,
+      "capitalOutUsd": 540.96,
+      "pnlUsd": 2.81,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776428207,
+        "hodlValueUsdAtExit": 538.16,
+        "lpMinusHodlUsd": 2.81,
+        "lpMinusHodlPct": 0.52
+      },
+      "events": [
+        {
+          "eventId": "0xa5a4cf537856349bed058509733155cc46e814f0a5808d204c0b35fdf64b3ea9675",
+          "poolId": "0xe893041e41c5bb494640a513f21712b77bcebc76000200000000000000000257",
+          "tx": "0xa5a4cf537856349bed058509733155cc46e814f0a5808d204c0b35fdf64b3ea9",
+          "type": "ADD",
+          "blockNumber": 44819298,
+          "timestamp": 1776427943,
+          "reconstructedUsd": 538.16,
+          "valueUsdApi": 535.48,
+          "deviationBps": 49.94
+        },
+        {
+          "eventId": "0x8d67b5f4cc539ad36436eeceb1a9d7f02b5eb1eb5bce0a5c5cfc2fa33d9f2179670",
+          "poolId": "0xe893041e41c5bb494640a513f21712b77bcebc76000200000000000000000257",
+          "tx": "0x8d67b5f4cc539ad36436eeceb1a9d7f02b5eb1eb5bce0a5c5cfc2fa33d9f2179",
+          "type": "REMOVE",
+          "blockNumber": 44819430,
+          "timestamp": 1776428207,
+          "reconstructedUsd": 540.96,
+          "valueUsdApi": 535.64,
+          "deviationBps": 99.38
+        }
+      ]
+    },
+    {
+      "poolId": "0x97bfed7f1b957c7f9412429330082b62f1a75b2d000200000000000000000244",
+      "poolAddress": "0x97bfed7f1b957c7f9412429330082b62f1a75b2d",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 453.63,
+      "capitalOutUsd": 454.21,
+      "pnlUsd": 0.58,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776215085,
+        "hodlValueUsdAtExit": 453.63,
+        "lpMinusHodlUsd": 0.58,
+        "lpMinusHodlPct": 0.13
+      },
+      "events": [
+        {
+          "eventId": "0x36f1a7c96f305a3e6098fbb04b1a024d80c0ec06d65947494b3d307289c4b79b620",
+          "poolId": "0x97bfed7f1b957c7f9412429330082b62f1a75b2d000200000000000000000244",
+          "tx": "0x36f1a7c96f305a3e6098fbb04b1a024d80c0ec06d65947494b3d307289c4b79b",
+          "type": "ADD",
+          "blockNumber": 44712666,
+          "timestamp": 1776214679,
+          "reconstructedUsd": 453.63,
+          "valueUsdApi": 452.14,
+          "deviationBps": 32.97
+        },
+        {
+          "eventId": "0x6fb025b3ed9baaee0ee5a182139574e30addc5f0622e36bb833f332bf39cd0ac300",
+          "poolId": "0x97bfed7f1b957c7f9412429330082b62f1a75b2d000200000000000000000244",
+          "tx": "0x6fb025b3ed9baaee0ee5a182139574e30addc5f0622e36bb833f332bf39cd0ac",
+          "type": "REMOVE",
+          "blockNumber": 44712869,
+          "timestamp": 1776215085,
+          "reconstructedUsd": 454.21,
+          "valueUsdApi": 454.03,
+          "deviationBps": 3.89
+        }
+      ]
+    },
+    {
+      "poolId": "0x7ddfad623cabf2f58e29650436b8eeedebba8d47000200000000000000000251",
+      "poolAddress": "0x7ddfad623cabf2f58e29650436b8eeedebba8d47",
+      "protocolVersion": 2,
+      "addEventCount": 1,
+      "removeEventCount": 1,
+      "capitalInUsd": 43.42,
+      "capitalOutUsd": 43.41,
+      "pnlUsd": -0.01,
+      "hodlBenchmark": {
+        "evalTimestamp": 1776302503,
+        "hodlValueUsdAtExit": 43.42,
+        "lpMinusHodlUsd": -0.01,
+        "lpMinusHodlPct": -0.03
+      },
+      "events": [
+        {
+          "eventId": "0x3a3547aaa97d8533c22c256cf86adfd8b6a3bdf4db475dc4bc018c1e234a8285249",
+          "poolId": "0x7ddfad623cabf2f58e29650436b8eeedebba8d47000200000000000000000251",
+          "tx": "0x3a3547aaa97d8533c22c256cf86adfd8b6a3bdf4db475dc4bc018c1e234a8285",
+          "type": "ADD",
+          "blockNumber": 44756429,
+          "timestamp": 1776302205,
+          "reconstructedUsd": 43.42,
+          "valueUsdApi": 43.59,
+          "deviationBps": 39.54
+        },
+        {
+          "eventId": "0xb8f5b899a23ec025215a5dc3aff7de2a948276c9344d659a1004eb7c854cfd9d700",
+          "poolId": "0x7ddfad623cabf2f58e29650436b8eeedebba8d47000200000000000000000251",
+          "tx": "0xb8f5b899a23ec025215a5dc3aff7de2a948276c9344d659a1004eb7c854cfd9d",
+          "type": "REMOVE",
+          "blockNumber": 44756578,
+          "timestamp": 1776302503,
+          "reconstructedUsd": 43.41,
+          "valueUsdApi": 43.57,
+          "deviationBps": 35.44
+        }
+      ]
+    }
+  ],
+  "excludedPools": [],
+  "warnings": []
+}
