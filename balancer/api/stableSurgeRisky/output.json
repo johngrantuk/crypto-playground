@@ -1,0 +1,1294 @@
+{
+  "specVersion": "2.0.0",
+  "activeChains": [
+    "ARBITRUM",
+    "AVALANCHE",
+    "BASE",
+    "GNOSIS",
+    "HYPEREVM",
+    "MAINNET",
+    "MONAD",
+    "OPTIMISM",
+    "PLASMA"
+  ],
+  "totals": {
+    "evaluated": 49,
+    "risky": 20
+  },
+  "pools": [
+    {
+      "pool": "0xae255db04ba78519f33871c557d8fd6bafdb83bd",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0xae255db04ba78519f33871c557d8fd6bafdb83bd",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "27991458.46",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.6",
+        "feeSurgeRatio": "0.225",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x6b31a94029fd7840d780191b6d63fa0d269bd883",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x6b31a94029fd7840d780191b6d63fa0d269bd883",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "6741887.15",
+        "volume24h": "1560171.66"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.6",
+        "feeSurgeRatio": "0.125",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x1ea5870f7c037930ce1d5d8d9317c670e89e13e3",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x1ea5870f7c037930ce1d5d8d9317c670e89e13e3",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "5920308.47",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x85b2b559bc2d21104c4defdd6efca8a20343361d",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x85b2b559bc2d21104c4defdd6efca8a20343361d",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "2198382.08",
+        "volume24h": "11564259.44"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x9054ae85300c7d3a325714fc2f1454d0b7c73a12",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x9054ae85300c7d3a325714fc2f1454d0b7c73a12",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "1804311.73",
+        "volume24h": "99.96"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x57c23c58b1d8c3292c15becf07c62c5c52457a42",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x57c23c58b1d8c3292c15becf07c62c5c52457a42",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "1615924.04",
+        "volume24h": "69422.14"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x111ce2a60c30f6058a57d0dbae1a39a42d998826",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x111ce2a60c30f6058a57d0dbae1a39a42d998826",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "1537804.84",
+        "volume24h": "1109.98"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": true
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x9ed5175aecb6653c1bdaa19793c16fd74fbeeb37",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x9ed5175aecb6653c1bdaa19793c16fd74fbeeb37",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "1343982.20",
+        "volume24h": "60220.29"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.4",
+        "feeSurgeRatio": "0.083333333333333333333",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x51cdf9cc199f8121b58d9337983a79a1b87330fd",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x51cdf9cc199f8121b58d9337983a79a1b87330fd",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "164564.01",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xc334299aef610fc79da129a920317b2bdbe2557e",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0xc334299aef610fc79da129a920317b2bdbe2557e",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "119871.30",
+        "volume24h": "2478.13"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.5",
+        "feeSurgeRatio": "0.18",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xe00e947decfe01692070e113002705bdf77ddbd3",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0xe00e947decfe01692070e113002705bdf77ddbd3",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "85216.37",
+        "volume24h": "324.13"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.8",
+        "feeSurgeRatio": "0.45",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x114907c2a07978c38ebb9f9f6a5261a846b79521",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x114907c2a07978c38ebb9f9f6a5261a846b79521",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "52006.64",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.4",
+        "feeSurgeRatio": "0.083333333333333333333",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x368bd7879d5f494d71959ae1c50b54809e6bba5a",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": "0x2ea96fea485008a5123027a553b3f87a710d0d04",
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x368bd7879d5f494d71959ae1c50b54809e6bba5a",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "40351.09",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.95",
+        "surgeThresholdPercentage": "0.3",
+        "feeSurgeRatio": "1.3571428571428571429",
+        "hasWrappedNative": false,
+        "hasNonNative": true
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xbb6f701f42a6104deffc041c5c0057b8a9c46bbc",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0xbb6f701f42a6104deffc041c5c0057b8a9c46bbc",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "34738.33",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.4",
+        "feeSurgeRatio": "0.15",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xfee0490b9f70163648bc8dbaaf3dfffc8420c73b",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": "0x2ea96fea485008a5123027a553b3f87a710d0d04",
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0xfee0490b9f70163648bc8dbaaf3dfffc8420c73b",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "30212.34",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.95",
+        "surgeThresholdPercentage": "0.3",
+        "feeSurgeRatio": "1.3571428571428571429",
+        "hasWrappedNative": false,
+        "hasNonNative": true
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x6649a010cbcf5742e7a13a657df358556b3e55cf",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x6649a010cbcf5742e7a13a657df358556b3e55cf",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "24297.10",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x6c5972311191097d002e804a9bf97c96c54059ed",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0x6c5972311191097d002e804a9bf97c96c54059ed",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "11867.73",
+        "volume24h": "337.79"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.1",
+        "surgeThresholdPercentage": "0.6",
+        "feeSurgeRatio": "0.25",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xc4ce391d82d164c166df9c8336ddf84206b2f812",
+      "chain": "MAINNET",
+      "chainId": 1,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/ethereum/v3/0xc4ce391d82d164c166df9c8336ddf84206b2f812",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "11859.04",
+        "volume24h": "79292.92"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x870c0af8a1af0b58b4b0bd31ce4fe72864ae45be",
+      "chain": "OPTIMISM",
+      "chainId": 10,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/optimism/v3/0x870c0af8a1af0b58b4b0bd31ce4fe72864ae45be",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "959477.57",
+        "volume24h": "75.48"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x49e75c0df48ad09a0e20e8bbded07ee60dd8bc03",
+      "chain": "OPTIMISM",
+      "chainId": 10,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/optimism/v3/0x49e75c0df48ad09a0e20e8bbded07ee60dd8bc03",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "18097.79",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.02",
+        "surgeThresholdPercentage": "0.15",
+        "feeSurgeRatio": "0.023529411764705882353",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x6e6bb18449fcf15b79efa2cfa70acf7593088029",
+      "chain": "GNOSIS",
+      "chainId": 100,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/gnosis/v3/0x6e6bb18449fcf15b79efa2cfa70acf7593088029",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "26516.27",
+        "volume24h": "13743.43"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x2daa146dfb7eaef0038f9f15b2ec1e4de003f72b",
+      "chain": "MONAD",
+      "chainId": 143,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/monad/v3/0x2daa146dfb7eaef0038f9f15b2ec1e4de003f72b",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "16763432.02",
+        "volume24h": "2777090.54"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.45",
+        "feeSurgeRatio": "0.090909090909090909091",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xc71c30914bc7790218b1adee782ba307b7867b08",
+      "chain": "MONAD",
+      "chainId": 143,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/monad/v3/0xc71c30914bc7790218b1adee782ba307b7867b08",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "630783.45",
+        "volume24h": "5.26"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.4",
+        "feeSurgeRatio": "0.15",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x340fa62ae58e90473da64b0af622cdd6113106cb",
+      "chain": "MONAD",
+      "chainId": 143,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/monad/v3/0x340fa62ae58e90473da64b0af622cdd6113106cb",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "143827.97",
+        "volume24h": "99203.39"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.4",
+        "feeSurgeRatio": "0.15",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x02b34a02db24179ac2d77ae20aa6215c7153e7f8",
+      "chain": "MONAD",
+      "chainId": 143,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/monad/v3/0x02b34a02db24179ac2d77ae20aa6215c7153e7f8",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "134098.55",
+        "volume24h": "17220.29"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.4",
+        "feeSurgeRatio": "0.15",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xc0abfaa62331db4bee1d3904b86310c5d120e045",
+      "chain": "MONAD",
+      "chainId": 143,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/monad/v3/0xc0abfaa62331db4bee1d3904b86310c5d120e045",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "125347.08",
+        "volume24h": "14497.54"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.4",
+        "feeSurgeRatio": "0.15",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x542312631ef65cc0d8a5c72726190aa987d0e599",
+      "chain": "MONAD",
+      "chainId": 143,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/monad/v3/0x542312631ef65cc0d8a5c72726190aa987d0e599",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "47013.55",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.3",
+        "feeSurgeRatio": "0.071428571428571428571",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xbddb004a6c393c3f83bcccf7f07ee9d409b214de",
+      "chain": "MONAD",
+      "chainId": 143,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/monad/v3/0xbddb004a6c393c3f83bcccf7f07ee9d409b214de",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "25372.85",
+        "volume24h": "573.20"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.45",
+        "feeSurgeRatio": "0.090909090909090909091",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x1e170c076779cff943765d4afcd3edf7d734e848",
+      "chain": "MONAD",
+      "chainId": 143,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/monad/v3/0x1e170c076779cff943765d4afcd3edf7d734e848",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "16126.47",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xc5619cfcce9fae18eda1d1e923aa1fdea42d93b7",
+      "chain": "HYPEREVM",
+      "chainId": 999,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/hyperevm/v3/0xc5619cfcce9fae18eda1d1e923aa1fdea42d93b7",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "955387.68",
+        "volume24h": "507.40"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.3",
+        "feeSurgeRatio": "0.071428571428571428571",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xa120f5789f914766cb4b44b83b545925b443f642",
+      "chain": "HYPEREVM",
+      "chainId": 999,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/hyperevm/v3/0xa120f5789f914766cb4b44b83b545925b443f642",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "117618.21",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.4",
+        "feeSurgeRatio": "0.083333333333333333333",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x0915824c3c5239928253548cd998a5f19668582a",
+      "chain": "HYPEREVM",
+      "chainId": 999,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/hyperevm/v3/0x0915824c3c5239928253548cd998a5f19668582a",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "64851.25",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.6",
+        "feeSurgeRatio": "0.225",
+        "hasWrappedNative": true,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xba0163e18b8b6236d5046841e698f2f2d89bd4bd",
+      "chain": "HYPEREVM",
+      "chainId": 999,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/hyperevm/v3/0xba0163e18b8b6236d5046841e698f2f2d89bd4bd",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "11296.59",
+        "volume24h": "9540.41"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.07",
+        "surgeThresholdPercentage": "0.6",
+        "feeSurgeRatio": "0.175",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x7ab124ec4029316c2a42f713828ddf2a192b36db",
+      "chain": "BASE",
+      "chainId": 8453,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/base/v3/0x7ab124ec4029316c2a42f713828ddf2a192b36db",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "1231988.07",
+        "volume24h": "129309.74"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.45",
+        "feeSurgeRatio": "0.090909090909090909091",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xb7b8b3afc010169779c5c2385ec0eb0477fe3347",
+      "chain": "BASE",
+      "chainId": 8453,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/base/v3/0xb7b8b3afc010169779c5c2385ec0eb0477fe3347",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "234648.58",
+        "volume24h": "469.97"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xe5556b41256d7efb2f0a17011ef8ab507a352141",
+      "chain": "BASE",
+      "chainId": 8453,
+      "owner": "0x93e5260ac975b475af8bf818c14deee7fefd5927",
+      "balancerUrl": "https://balancer.fi/pools/base/v3/0xe5556b41256d7efb2f0a17011ef8ab507a352141",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "152622.35",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.3",
+        "feeSurgeRatio": "0.12857142857142857143",
+        "hasWrappedNative": false,
+        "hasNonNative": true
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x3bcf4e84c32d90bb309eab58d97b70372c84bc2c",
+      "chain": "BASE",
+      "chainId": 8453,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/base/v3/0x3bcf4e84c32d90bb309eab58d97b70372c84bc2c",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "150858.30",
+        "volume24h": "10667.52"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.1",
+        "surgeThresholdPercentage": "0.3",
+        "feeSurgeRatio": "0.14285714285714285714",
+        "hasWrappedNative": false,
+        "hasNonNative": true
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x2be9d6899432e988a8b71eb80ee29a49521e2cba",
+      "chain": "BASE",
+      "chainId": 8453,
+      "owner": "0x8ab0eb1314ffa9636b941e0d1c5805dec905b29a",
+      "balancerUrl": "https://balancer.fi/pools/base/v3/0x2be9d6899432e988a8b71eb80ee29a49521e2cba",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "62408.56",
+        "volume24h": "1045.46"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.4",
+        "feeSurgeRatio": "0.15",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x9ab907fb3e098103ca048ad26e501bf7b3dfa3eb",
+      "chain": "BASE",
+      "chainId": 8453,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/base/v3/0x9ab907fb3e098103ca048ad26e501bf7b3dfa3eb",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "44424.75",
+        "volume24h": "12510.26"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.3",
+        "feeSurgeRatio": "0.071428571428571428571",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x01e2c7fcde2b8d5d1413732c4e274ba5b06b1e54",
+      "chain": "PLASMA",
+      "chainId": 9745,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/plasma/v3/0x01e2c7fcde2b8d5d1413732c4e274ba5b06b1e54",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "526404.52",
+        "volume24h": "32463.61"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.005",
+        "surgeThresholdPercentage": "0.8",
+        "feeSurgeRatio": "0.025",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x19b001e6bc2d89154c18e2216eec5c8c6047b6d8",
+      "chain": "ARBITRUM",
+      "chainId": 42161,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/arbitrum/v3/0x19b001e6bc2d89154c18e2216eec5c8c6047b6d8",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "1593454.36",
+        "volume24h": "871521.65"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.45",
+        "feeSurgeRatio": "0.090909090909090909091",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xa978cc348a0b5de8bd564a1d8fe437787fd12664",
+      "chain": "ARBITRUM",
+      "chainId": 42161,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/arbitrum/v3/0xa978cc348a0b5de8bd564a1d8fe437787fd12664",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "1191333.82",
+        "volume24h": "104822.88"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x5418a64e0cdb20548acb394f5d00a089baf02161",
+      "chain": "ARBITRUM",
+      "chainId": 42161,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/arbitrum/v3/0x5418a64e0cdb20548acb394f5d00a089baf02161",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "276443.51",
+        "volume24h": "2475.84"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xc072880e1bc0bcddc99db882c7f3e7a839281cf4",
+      "chain": "ARBITRUM",
+      "chainId": 42161,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/arbitrum/v3/0xc072880e1bc0bcddc99db882c7f3e7a839281cf4",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "128996.85",
+        "volume24h": "8216.31"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x412d928c31b82b78ccb8b04aa8bfcdadb9236fc6",
+      "chain": "ARBITRUM",
+      "chainId": 42161,
+      "owner": "0x8ab0eb1314ffa9636b941e0d1c5805dec905b29a",
+      "balancerUrl": "https://balancer.fi/pools/arbitrum/v3/0x412d928c31b82b78ccb8b04aa8bfcdadb9236fc6",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "64531.30",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.95",
+        "surgeThresholdPercentage": "0.4",
+        "feeSurgeRatio": "1.5833333333333333333",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x7abe8caa137cdb2490a9fa9f8be70cfbb0ff8652",
+      "chain": "ARBITRUM",
+      "chainId": 42161,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/arbitrum/v3/0x7abe8caa137cdb2490a9fa9f8be70cfbb0ff8652",
+      "hookType": null,
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "12722.68",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": null,
+        "surgeThresholdPercentage": null,
+        "feeSurgeRatio": "0",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x1fed8401c145f64da567881d272d0df233118dca",
+      "chain": "AVALANCHE",
+      "chainId": 43114,
+      "owner": "0x0000000000000000000000000000000000000000",
+      "balancerUrl": "https://balancer.fi/pools/avalanche/v3/0x1fed8401c145f64da567881d272d0df233118dca",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "573090.25",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.6",
+        "feeSurgeRatio": "0.125",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0xfcec3c8d86329defb548202fe1b86ff2188603a8",
+      "chain": "AVALANCHE",
+      "chainId": 43114,
+      "owner": null,
+      "balancerUrl": "https://balancer.fi/pools/avalanche/v3/0xfcec3c8d86329defb548202fe1b86ff2188603a8",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": false,
+      "exclusion_path": null,
+      "reason": null,
+      "metrics": {
+        "totalLiquidity": "18240.31",
+        "volume24h": "5273.86"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.05",
+        "surgeThresholdPercentage": "0.3",
+        "feeSurgeRatio": "0.071428571428571428571",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    },
+    {
+      "pool": "0x832f8e068e92d56b94205ea605e5cdaa7cded1f0",
+      "chain": "AVALANCHE",
+      "chainId": 43114,
+      "owner": "0x8ab0eb1314ffa9636b941e0d1c5805dec905b29a",
+      "balancerUrl": "https://balancer.fi/pools/avalanche/v3/0x832f8e068e92d56b94205ea605e5cdaa7cded1f0",
+      "hookType": "STABLE_SURGE",
+      "surge_excluded": true,
+      "exclusion_path": "aggressive_surge",
+      "reason": "surge_risky",
+      "metrics": {
+        "totalLiquidity": "12197.08",
+        "volume24h": "0.00"
+      },
+      "inputs": {
+        "maxSurgeFeePercentage": "0.09",
+        "surgeThresholdPercentage": "0.3",
+        "feeSurgeRatio": "0.12857142857142857143",
+        "hasWrappedNative": false,
+        "hasNonNative": false
+      },
+      "context": {
+        "isPoolPaused": false,
+        "isPoolInRecoveryMode": false
+      }
+    }
+  ]
+}
